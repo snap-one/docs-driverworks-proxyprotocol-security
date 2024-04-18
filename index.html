@@ -1,0 +1,2852 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Driverworks Reference</title>
+
+    <style media="screen">
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s, .highlight .sa, .highlight .dl {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf, .highlight .fm {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv, .highlight .vm {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #f92672;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <style media="print">
+      * {
+        -webkit-transition:none!important;
+        transition:none!important;
+      }
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #586e75;
+}
+.highlight .err {
+  color: #002b36;
+  background-color: #dc322f;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
+  color: #657b83;
+}
+.highlight .cp {
+  color: #b58900;
+}
+.highlight .nt {
+  color: #b58900;
+}
+.highlight .o, .highlight .ow {
+  color: #93a1a1;
+}
+.highlight .p, .highlight .pi {
+  color: #93a1a1;
+}
+.highlight .gi {
+  color: #859900;
+}
+.highlight .gd {
+  color: #dc322f;
+}
+.highlight .gh {
+  color: #268bd2;
+  background-color: #002b36;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #6c71c4;
+}
+.highlight .kc {
+  color: #cb4b16;
+}
+.highlight .kt {
+  color: #cb4b16;
+}
+.highlight .kd {
+  color: #cb4b16;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #859900;
+}
+.highlight .sa {
+  color: #6c71c4;
+}
+.highlight .sr {
+  color: #2aa198;
+}
+.highlight .si {
+  color: #d33682;
+}
+.highlight .se {
+  color: #d33682;
+}
+.highlight .nn {
+  color: #b58900;
+}
+.highlight .nc {
+  color: #b58900;
+}
+.highlight .no {
+  color: #b58900;
+}
+.highlight .na {
+  color: #268bd2;
+}
+.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx {
+  color: #859900;
+}
+.highlight .ss {
+  color: #859900;
+}
+    </style>
+    <link href="stylesheets/screen-9c19b03a.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print-966d6edc.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all-b12a2749.js"></script>
+
+  </head>
+
+  <body class="index" data-languages="[&quot;lua&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar-cad8cdcb.png" alt="" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo-3056e635.png" class="logo" alt="" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="lua">lua</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#license-copyright-and-trademark" class="toc-h1 toc-link" data-title="License, Copyright, and Trademark">License, Copyright, and Trademark</a>
+          </li>
+          <li>
+            <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#introduction-proxies-commands" class="toc-h2 toc-link" data-title="Proxies (Commands)">Proxies (Commands)</a>
+                  </li>
+                  <li>
+                    <a href="#introduction-protocol-notifications" class="toc-h2 toc-link" data-title="Protocol (Notifications)">Protocol (Notifications)</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#what-s-new" class="toc-h1 toc-link" data-title="What’s New">What’s New</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#what-s-new-what-s-new-in-3-4-1" class="toc-h2 toc-link" data-title="What’s New in 3.4.1">What’s New in 3.4.1</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-s-new-in-3-4-0" class="toc-h2 toc-link" data-title="What’s New in 3.4.0">What’s New in 3.4.0</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-s-new-in-3-3-2" class="toc-h2 toc-link" data-title="What’s New in 3.3.2">What’s New in 3.3.2</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-s-new-in-3-3-1" class="toc-h2 toc-link" data-title="What’s New in 3.3.1">What’s New in 3.3.1</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-s-new-in-3-3-0" class="toc-h2 toc-link" data-title="What’s New in 3.3.0">What’s New in 3.3.0</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-s-new-in-3-2-3" class="toc-h2 toc-link" data-title="What’s New in 3.2.3">What’s New in 3.2.3</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-s-new-in-3-2-2" class="toc-h2 toc-link" data-title="What’s New in 3.2.2">What’s New in 3.2.2</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-s-new-in-3-2-1" class="toc-h2 toc-link" data-title="What’s New in 3.2.1">What’s New in 3.2.1</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-s-new-in-3-2-0" class="toc-h2 toc-link" data-title="What’s New in 3.2.0">What’s New in 3.2.0</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-was-new-in-3-1-2" class="toc-h2 toc-link" data-title="What was New in 3.1.2">What was New in 3.1.2</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-was-new-in-3-1-0" class="toc-h2 toc-link" data-title="What was New in 3.1.0">What was New in 3.1.0</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-was-new-in-o-s-3" class="toc-h2 toc-link" data-title="What was New in O.S.3">What was New in O.S.3</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#security-capabilities" class="toc-h1 toc-link" data-title="Security Capabilities">Security Capabilities</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#security-capabilities-what-was-new-in-o-s-3-example" class="toc-h2 toc-link" data-title="Example">Example</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#security-panel-commands" class="toc-h1 toc-link" data-title="Security Panel Commands">Security Panel Commands</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#security-panel-commands-additional_panel_info" class="toc-h2 toc-link" data-title="ADDITIONAL_PANEL_INFO">ADDITIONAL_PANEL_INFO</a>
+                  </li>
+                  <li>
+                    <a href="#security-panel-commands-get_all_pgm_info" class="toc-h2 toc-link" data-title="GET_ALL_PGM_INFO">GET_ALL_PGM_INFO</a>
+                  </li>
+                  <li>
+                    <a href="#security-panel-commands-get_all_partition_info" class="toc-h2 toc-link" data-title="GET_ALL_PARTITION_INFO">GET_ALL_PARTITION_INFO</a>
+                  </li>
+                  <li>
+                    <a href="#security-panel-commands-get_all_zone_info" class="toc-h2 toc-link" data-title="GET_ALL_ZONE_INFO">GET_ALL_ZONE_INFO</a>
+                  </li>
+                  <li>
+                    <a href="#security-panel-commands-get_panel_setup" class="toc-h2 toc-link" data-title="GET_PANEL_SETUP">GET_PANEL_SETUP</a>
+                  </li>
+                  <li>
+                    <a href="#security-panel-commands-pgm_close" class="toc-h2 toc-link" data-title="PGM_CLOSE">PGM_CLOSE</a>
+                  </li>
+                  <li>
+                    <a href="#security-panel-commands-pgm_open" class="toc-h2 toc-link" data-title="PGM_OPEN">PGM_OPEN</a>
+                  </li>
+                  <li>
+                    <a href="#security-panel-commands-pgm_toggle" class="toc-h2 toc-link" data-title="PGM_TOGGLE">PGM_TOGGLE</a>
+                  </li>
+                  <li>
+                    <a href="#security-panel-commands-pgm_trigger" class="toc-h2 toc-link" data-title="PGM_TRIGGER">PGM_TRIGGER</a>
+                  </li>
+                  <li>
+                    <a href="#security-panel-commands-read_panel_info" class="toc-h2 toc-link" data-title="READ_PANEL_INFO">READ_PANEL_INFO</a>
+                  </li>
+                  <li>
+                    <a href="#security-panel-commands-set_panel_time_date" class="toc-h2 toc-link" data-title="SET_PANEL_TIME_DATE">SET_PANEL_TIME_DATE</a>
+                  </li>
+                  <li>
+                    <a href="#security-panel-commands-set_partition_enabled" class="toc-h2 toc-link" data-title="SET_PARTITION_ENABLED">SET_PARTITION_ENABLED</a>
+                  </li>
+                  <li>
+                    <a href="#security-panel-commands-send_pgm_command" class="toc-h2 toc-link" data-title="SEND_PGM_COMMAND">SEND_PGM_COMMAND</a>
+                  </li>
+                  <li>
+                    <a href="#security-panel-commands-set_zone_info" class="toc-h2 toc-link" data-title="SET_ZONE_INFO">SET_ZONE_INFO</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#security-panel-capabilities" class="toc-h1 toc-link" data-title="Security Panel Capabilities">Security Panel Capabilities</a>
+          </li>
+          <li>
+            <a href="#security-panel-conditionals" class="toc-h1 toc-link" data-title="Security Panel Conditionals">Security Panel Conditionals</a>
+          </li>
+          <li>
+            <a href="#security-panel-events" class="toc-h1 toc-link" data-title="Security Panel Events">Security Panel Events</a>
+          </li>
+          <li>
+            <a href="#security-panel-notifications" class="toc-h1 toc-link" data-title="Security Panel Notifications">Security Panel Notifications</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#security-panel-notifications-overview" class="toc-h2 toc-link" data-title="Overview">Overview</a>
+                  </li>
+                  <li>
+                    <a href="#security-panel-notifications-all_pgms_info" class="toc-h2 toc-link" data-title="ALL_PGMS_INFO">ALL_PGMS_INFO</a>
+                  </li>
+                  <li>
+                    <a href="#security-panel-notifications-all_zones_info" class="toc-h2 toc-link" data-title="ALL_ZONES_INFO">ALL_ZONES_INFO</a>
+                  </li>
+                  <li>
+                    <a href="#security-panel-notifications-panel_add_pgm" class="toc-h2 toc-link" data-title="PANEL_ADD_PGM">PANEL_ADD_PGM</a>
+                  </li>
+                  <li>
+                    <a href="#security-panel-notifications-sync_panel_info" class="toc-h2 toc-link" data-title="SYNC_PANEL_INFO">SYNC_PANEL_INFO</a>
+                  </li>
+                  <li>
+                    <a href="#security-panel-notifications-panel_partition_state" class="toc-h2 toc-link" data-title="PANEL_PARTITION_STATE">PANEL_PARTITION_STATE</a>
+                  </li>
+                  <li>
+                    <a href="#security-panel-notifications-panel_pgm_state" class="toc-h2 toc-link" data-title="PANEL_PGM_STATE">PANEL_PGM_STATE</a>
+                  </li>
+                  <li>
+                    <a href="#security-panel-notifications-panel_remove_pgm" class="toc-h2 toc-link" data-title="PANEL_REMOVE_PGM">PANEL_REMOVE_PGM</a>
+                  </li>
+                  <li>
+                    <a href="#security-panel-notifications-panel_remove_-zone" class="toc-h2 toc-link" data-title="PANEL_REMOVE_ ZONE">PANEL_REMOVE_ ZONE</a>
+                  </li>
+                  <li>
+                    <a href="#security-panel-notifications-panel_zone_info" class="toc-h2 toc-link" data-title="PANEL_ZONE_INFO">PANEL_ZONE_INFO</a>
+                  </li>
+                  <li>
+                    <a href="#security-panel-notifications-panel_zone_state" class="toc-h2 toc-link" data-title="PANEL_ZONE_STATE">PANEL_ZONE_STATE</a>
+                  </li>
+                  <li>
+                    <a href="#security-panel-notifications-request_additional_panel_info" class="toc-h2 toc-link" data-title="REQUEST_ADDITIONAL_PANEL_INFO">REQUEST_ADDITIONAL_PANEL_INFO</a>
+                  </li>
+                  <li>
+                    <a href="#security-panel-notifications-sync_panel_info" class="toc-h2 toc-link" data-title="SYNC_PANEL_INFO">SYNC_PANEL_INFO</a>
+                  </li>
+                  <li>
+                    <a href="#security-panel-notifications-trouble_clear" class="toc-h2 toc-link" data-title="TROUBLE_CLEAR">TROUBLE_CLEAR</a>
+                  </li>
+                  <li>
+                    <a href="#security-panel-notifications-trouble_start" class="toc-h2 toc-link" data-title="TROUBLE_START">TROUBLE_START</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#security-panel-variables" class="toc-h1 toc-link" data-title="Security Panel Variables">Security Panel Variables</a>
+          </li>
+          <li>
+            <a href="#security-partition-capabilities" class="toc-h1 toc-link" data-title="Security Partition Capabilities">Security Partition Capabilities</a>
+          </li>
+          <li>
+            <a href="#security-partition-conditionals" class="toc-h1 toc-link" data-title="Security Partition Conditionals">Security Partition Conditionals</a>
+          </li>
+          <li>
+            <a href="#security-partition-events" class="toc-h1 toc-link" data-title="Security Partition Events">Security Partition Events</a>
+          </li>
+          <li>
+            <a href="#security-partition-notifications" class="toc-h1 toc-link" data-title="Security Partition Notifications">Security Partition Notifications</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#security-partition-notifications-overview" class="toc-h2 toc-link" data-title="Overview">Overview</a>
+                  </li>
+                  <li>
+                    <a href="#security-partition-notifications-arm_failed" class="toc-h2 toc-link" data-title="ARM_FAILED">ARM_FAILED</a>
+                  </li>
+                  <li>
+                    <a href="#security-partition-notifications-clear_zone_list" class="toc-h2 toc-link" data-title="CLEAR_ZONE_LIST">CLEAR_ZONE_LIST</a>
+                  </li>
+                  <li>
+                    <a href="#security-partition-notifications-code_required" class="toc-h2 toc-link" data-title="CODE_REQUIRED">CODE_REQUIRED</a>
+                  </li>
+                  <li>
+                    <a href="#security-partition-notifications-disarm_failed" class="toc-h2 toc-link" data-title="DISARM_FAILED">DISARM_FAILED</a>
+                  </li>
+                  <li>
+                    <a href="#security-partition-notifications-emergency_triggered" class="toc-h2 toc-link" data-title="EMERGENCY_TRIGGERED">EMERGENCY_TRIGGERED</a>
+                  </li>
+                  <li>
+                    <a href="#security-partition-notifications-has_zone" class="toc-h2 toc-link" data-title="HAS_ZONE">HAS_ZONE</a>
+                  </li>
+                  <li>
+                    <a href="#security-partition-notifications-partition_enabled" class="toc-h2 toc-link" data-title="PARTITION_ENABLED">PARTITION_ENABLED</a>
+                  </li>
+                  <li>
+                    <a href="#security-partition-notifications-partition_state" class="toc-h2 toc-link" data-title="PARTITION_STATE">PARTITION_STATE</a>
+                  </li>
+                  <li>
+                    <a href="#security-partition-notifications-partition_state_init" class="toc-h2 toc-link" data-title="PARTITION_STATE_INIT">PARTITION_STATE_INIT</a>
+                  </li>
+                  <li>
+                    <a href="#security-partition-notifications-request_additional_info" class="toc-h2 toc-link" data-title="REQUEST_ADDITIONAL_INFO">REQUEST_ADDITIONAL_INFO</a>
+                  </li>
+                  <li>
+                    <a href="#security-partition-notifications-request_default_user_code_" class="toc-h2 toc-link" data-title="REQUEST_DEFAULT_USER_CODE_">REQUEST_DEFAULT_USER_CODE_</a>
+                  </li>
+                  <li>
+                    <a href="#security-partition-notifications-remove_zone" class="toc-h2 toc-link" data-title="REMOVE_ZONE">REMOVE_ZONE</a>
+                  </li>
+                  <li>
+                    <a href="#security-partition-notifications-zone_state" class="toc-h2 toc-link" data-title="ZONE_STATE">ZONE_STATE</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#security-partition-commands" class="toc-h1 toc-link" data-title="Security Partition Commands">Security Partition Commands</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#security-partition-commands-additional_info" class="toc-h2 toc-link" data-title="ADDITIONAL_INFO">ADDITIONAL_INFO</a>
+                  </li>
+                  <li>
+                    <a href="#security-partition-commands-arm_cancel" class="toc-h2 toc-link" data-title="ARM_CANCEL">ARM_CANCEL</a>
+                  </li>
+                  <li>
+                    <a href="#security-partition-commands-execute_emergency" class="toc-h2 toc-link" data-title="EXECUTE_EMERGENCY">EXECUTE_EMERGENCY</a>
+                  </li>
+                  <li>
+                    <a href="#security-partition-commands-execute_function" class="toc-h2 toc-link" data-title="EXECUTE_FUNCTION">EXECUTE_FUNCTION</a>
+                  </li>
+                  <li>
+                    <a href="#security-partition-commands-key_press" class="toc-h2 toc-link" data-title="KEY_PRESS">KEY_PRESS</a>
+                  </li>
+                  <li>
+                    <a href="#security-partition-commands-set_default_user_code" class="toc-h2 toc-link" data-title="SET_DEFAULT_USER_CODE">SET_DEFAULT_USER_CODE</a>
+                  </li>
+                  <li>
+                    <a href="#security-partition-commands-partition_arm" class="toc-h2 toc-link" data-title="PARTITION_ARM">PARTITION_ARM</a>
+                  </li>
+                  <li>
+                    <a href="#security-partition-commands-partition_disarm" class="toc-h2 toc-link" data-title="PARTITION_DISARM">PARTITION_DISARM</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#security-partition-states" class="toc-h1 toc-link" data-title="Security Partition States">Security Partition States</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#security-partition-states-security-system-controller-partition-states" class="toc-h2 toc-link" data-title="SECURITY SYSTEM CONTROLLER PARTITION STATES">SECURITY SYSTEM CONTROLLER PARTITION STATES</a>
+                  </li>
+                  <li>
+                    <a href="#security-partition-states-alarm" class="toc-h2 toc-link" data-title="ALARM">ALARM</a>
+                  </li>
+                  <li>
+                    <a href="#security-partition-states-armed" class="toc-h2 toc-link" data-title="ARMED">ARMED</a>
+                  </li>
+                  <li>
+                    <a href="#security-partition-states-confirmation-required" class="toc-h2 toc-link" data-title="CONFIRMATION REQUIRED">CONFIRMATION REQUIRED</a>
+                  </li>
+                  <li>
+                    <a href="#security-partition-states-disarmed-ready" class="toc-h2 toc-link" data-title="DISARMED READY">DISARMED READY</a>
+                  </li>
+                  <li>
+                    <a href="#security-partition-states-disarmed-not-ready" class="toc-h2 toc-link" data-title="DISARMED NOT READY">DISARMED NOT READY</a>
+                  </li>
+                  <li>
+                    <a href="#security-partition-states-exit-delay" class="toc-h2 toc-link" data-title="EXIT DELAY">EXIT DELAY</a>
+                  </li>
+                  <li>
+                    <a href="#security-partition-states-entry-delay" class="toc-h2 toc-link" data-title="ENTRY DELAY">ENTRY DELAY</a>
+                  </li>
+                  <li>
+                    <a href="#security-partition-states-offline" class="toc-h2 toc-link" data-title="OFFLINE">OFFLINE</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#security-sensor-types" class="toc-h1 toc-link" data-title="Security Sensor Types">Security Sensor Types</a>
+          </li>
+          <li>
+            <a href="#security-variables" class="toc-h1 toc-link" data-title="Security Variables">Security Variables</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#security-variables-security-system-controller-partition-variables" class="toc-h2 toc-link" data-title="SECURITY SYSTEM CONTROLLER PARTITION VARIABLES">SECURITY SYSTEM CONTROLLER PARTITION VARIABLES</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+            <li><a href='https://github.com/lord/slate'>Documentation Powered by Slate</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='license-copyright-and-trademark'>License, Copyright, and Trademark</h1>
+
+<p>The content contained in this repository is the intellectual property of Snap One, LLC, (formerly known as Wirepath Home Systems, LLC), and use without a valid license from Snap One is strictly prohibited. The user of this repository shall keep all content contained herein confidential and shall protect this content in whole or in part from disclosure to any and all third parties except as specifically authorized in writing by Snap One.</p>
+
+<p><strong>License and Intellectual Property Disclaimer</strong></p>
+
+<p>The content in this repository is provided in connection with Snap One products. No license, express or implied, by estoppal or otherwise, to any intellectual property rights is granted by this document or in this repository. Except as provided in Snap Oneʼs terms and conditions for the license of such products, Snap One and its affiliates assume no liability whatsoever and disclaim any express or implied warranty, relating to the sale and/or use of Snap One products including liability or warranties relating to fitness for a particular purpose, merchantability, or infringement of any patent, copyright or other intellectual property right. Snap One products are not intended for use in medical, lifesaving, or life sustaining applications.</p>
+
+<p>Information regarding third-party products is provided solely for educational purposes. Snap One is not responsible for the performance or support of third-party products and does not make any representations or warranties whatsoever regarding the quality, reliability, functionality or compatibility of these products. The reader is advised that third parties can have intellectual property rights that can be relevant to this repository and the technologies discussed herein, and is advised to seek the advice of competent legal counsel regarding the intellectual property rights of third parties, without obligation of Snap One.</p>
+
+<p>Snap One retains the right make changes to this repository or related product specifications and descriptions in this repository, at any time, without notice. Snap One makes no warranty for the use of this repository and assumes no responsibility for any errors that can appear in the repository nor does it make a commitment to update the content contained herein.</p>
+
+<p><strong>Copyright</strong></p>
+
+<p>Copyright 2023 Snap One, LLC. All rights reserved.</p>
+
+<p>The above copyright notice applies to all content in this repository unless otherwise stated explicitly herein that a third-party’s copyright applies.</p>
+
+<p>No part of this publication may be reproduced, photocopied, stored on a retrieval system, or transmitted without the express written consent of the publisher.</p>
+
+<p><strong>Trademarks</strong></p>
+
+<p>Snap One and Snap One Logo, Control4 and the Control4 logo, and DriverWorks are trademarks or registered trademarks of  Snap One, LLC. Other product and company names mentioned in this repository may be the trademarks or registered trademarks of their respective owners.</p>
+
+<p><strong> Derivative Works</strong></p>
+
+<p>To the extent that you create any “Derivative Work” (meaning any work that is based upon one or more preexisting versions of the work provided to you in this repository, such as an enhancement or modification, revision, translation, abridgement, condensation, expansion, collection, compilation or any other form in which such preexisting works may be recast, modified, transformed or adapted, explicitly including without limitation, any updates or changes to Snap One, LLC’s software code or intellectual property) such Derivative Work shall be owned by Snap One, LLC and all right, title and interest in and to each such Derivative Work shall automatically vest in Snap One, LLC. To the extent any Derivative Work does not automatically vest in Snap One, LLC by operation of law, you hereby assign such Derivative Work to Snap One, LLC with full title guarantee. Snap One, LLC shall have no obligation to grant you any right in any such Derivative Work.</p>
+
+<p><strong>Contact Us</strong></p>
+
+<p>Snap One, LLC
+11734 S. Election Road
+Salt Lake City, UT 84020 USA</p>
+
+<p><a href="www.control4.com">http://www.control4.com</a></p>
+<h1 id='introduction'>Introduction</h1>
+
+<h2 id='introduction-proxies-commands'>Proxies (Commands)</h2>
+
+<p>A proxy driver is an interface to the Control4 system for a set of devices that share common functionality. For instance, most DVD disc changers have common controls such as PLAY, STOP, PAUSE and FAST FORWARD.  The disc changer proxy allows for a common user interface to control all disc changers.  The Control4 system (Director) sends information to and receives information from the proxy drivers.  The proxy drivers send information to and receives information from the protocol drivers.
+Remember, your DriverWorks driver interacts with the proxy driver which then interacts with the system.  As a driver developer you will be relying on this proxy to provide status (notification) to the Control4 system for the device you are controlling.  You will also receive commands from the system that you will act on to control the device.  These commands and notifications are at the heart of what you will be implementing in your driver.  Essentially your driver is becoming the go-between from the Control4 system and your device with the proxy driver giving structure to the commands and notifications which you will be implementing.
+Your driver can facilitate communications with multiple types of proxies for a single device. As an example, a Security System driver will utilize both the Security proxy and the Contacts proxy. These additional proxies are configured in the &lt;connections&gt; section of the .c4z.</p>
+
+<h2 id='introduction-protocol-notifications'>Protocol (Notifications)</h2>
+
+<p>Two similar devices may have the same functionality but utilize a very different command set.  A protocol driver provides the device-specific information needed to communicate with the Control4 system.  In the case of DriverWorks, the DriverWorks driver is the protocol driver.  When combined with the device-specific.c4Z file it provides the custom code necessary to implement the 2-way device driver.  In the case of DriverWorks, the DriverWorks driver is the protocol driver. When combined with the device-specific.c4Z file it provides the custom code necessary to implement the 2-way device driver.</p>
+<h1 id='what-s-new'>What’s New</h1>
+
+<h2 id='what-s-new-what-s-new-in-3-4-1'>What’s New in 3.4.1</h2>
+
+<p>There were no modifications to the Proxy and Protocol Guide in conjunction with O.S. Release 3.4.1.</p>
+
+<h2 id='what-s-new-what-s-new-in-3-4-0'>What’s New in 3.4.0</h2><h3 id='what-s-new-what-s-new-in-3-4-0-blind-proxy'>Blind Proxy</h3>
+<p>A new capability has been added to the proxy called <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#blind-capabilities-always_send_level">always_send_level</a>. If value is true, then the SetTargetLevel commands are always sent regardless of current level values. This is useful if the blind device does not support two-way communication and is controlled outside of the Control4 operating system. </p>
+<h3 id='what-s-new-what-s-new-in-3-4-0-camera-proxy'>Camera Proxy</h3>
+<p>Beginning with O.S. 3.4.0, camera drivers have the ability to distribute audio to devices running Navigator. If a camera supports the proper <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-audio-distribution">CODEC</a> and the camera microphone has been enabled in the appropriate interface a new audio button will appear at the bottom of the single-camera view. This will allow the user to hear live audio with the live video.</p>
+<h3 id='what-s-new-what-s-new-in-3-4-0-generic-media-player-proxy'>Generic Media Player Proxy</h3>
+<p>A new capability has been added to the proxy called <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#generic-media-player-capabilities-allow_audio_pathing">allow_audio_pathing</a>. This capability is applicable in the scenario where the AV Switch proxy is included as a secondary proxy to the Generic Media Player Proxy. It is useful  when modeling streaming media devices that require minidrivers.</p>
+<h3 id='what-s-new-what-s-new-in-3-4-0-light-v2-proxy'>Light (v2) Proxy</h3>
+<p>The following color conversion functions have been modified in 3.4.0. The gamut parameter now receives a new valid string of: &quot;custom”. See the links below for more information.</p>
+
+<p>RGB functions:
+- <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorrgbtoxy">ColorRGBtoXY</a>
+- <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorxytorgb">ColorXYtoRGB</a></p>
+
+<p>HSV functions:
+- <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorhsvtoxy">ColorHSVtoXY</a>
+- <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorxytohsv">ColorXYtoHSV</a></p>
+
+<h2 id='what-s-new-what-s-new-in-3-3-2'>What’s New in 3.3.2</h2><h3 id='what-s-new-what-s-new-in-3-3-2-camera-proxy'>Camera Proxy</h3>
+<p><strong>Support for Dynamic Camera Streams</strong></p>
+
+<p>Camera drivers can now implement a new <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-camera-streams">dynamic streams API</a> to provide a list of streams that the Navigators can pick from. </p>
+<h3 id='what-s-new-what-s-new-in-3-3-2-light-v2-proxy'>Light V2 Proxy</h3>
+<p><strong>Capabilities that have been Added</strong></p>
+
+<p>A new feature has been delivered in O.S. 3.3.2 which allows dealers and customers to specify how a light&#39;s brightness behaves when the light is turned on. The functionality includes:</p>
+
+<ul>
+<li>Preset - Light turns on to a preset level.</li>
+<li>Previous - Light turns on to the previous light level.</li>
+<li>Default On - Provided for backwards compatibility and is the same as setting Preset to On.</li>
+</ul>
+
+<p>Driver developers must opt-in to this new feature and which parts it wants to support via the following new capabilities:</p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-brightness_on-mode_preset">brightness_on_mode_preset</a> has been included to enable the brightness presets for &quot;On Mode&quot; behavior for a light.</p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-brightness_on_mode_previous">brightness_on_mode_previous</a> has been included to enable the Previous On &quot;On Mode&quot; brightness  behavior for a light.</p>
+
+<p>A new feature was created to allow dealers and customers to specify how a light&#39;s color behaves when a light is turned on. The functionality includes:</p>
+
+<ul>
+<li>Color Fade - Color behavior such as Dim to Warm</li>
+<li>Preset - Color changes to a preset.</li>
+<li>Previous - Color changes to the previous color value.</li>
+<li>Default On - Provided for backwards compatibility and is the same as setting Preset to On.</li>
+</ul>
+
+<p>Driver developers must opt-in to this new feature and which parts it wants to support via the following new capabilities:</p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_on_mode_fade">color_on_mode_fade</a> has been included to enable the Fade On &quot;On Mode&quot; behavior, such as Dim to Warm, for a light.</p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_on_mode_preset">color_on_mode_preset</a> has been included to enable presets for use with &quot;On Mode&quot; behavior for a light.</p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_on_mode_previous">color_on_mode_previous</a> has been included to enable the Previous On &quot;On Mode&quot; behavior for a light.</p>
+
+<p>Additionally,  the following new capabilities have been included in 3.3.2:</p>
+
+<p>A new capability: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-brightness_rate_max">brightness_rate_max</a> has been included in support of drivers without buttons. This capability allows these driver to no longer need to define click and hold maximum rates.</p>
+
+<p>A new capability: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-brightness_rate_min">brightness_rate_min</a> has been included in support of drivers without buttons. This capability allows these driver to no longer need to define click and hold minimum rates.</p>
+
+<p>A new capability: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-supports_brightness_stop">supports_brightness_stop</a> has been included if a light brightness transition can be stopped during a ramp. </p>
+
+<p><strong>Capabilities that have been Deprecated</strong></p>
+
+<p>fixed_ramp_rate - Use <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-click_rate_min">click_rate_min</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-click_rate_max">click_rate_max</a> instead.</p>
+
+<p>has_fixed_ramp_rate - Use <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-click_rate_min">click_rate_min</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-click_rate_max">click_rate_max</a> instead.</p>
+
+<p>num_buttons</p>
+
+<p>ramp_level</p>
+
+<p>min_max</p>
+
+<p>on_off</p>
+
+<p>buttons_are_virtual</p>
+
+<p><strong>Commands that have been Added</strong></p>
+
+<p>Note: Enforcement of valid minimum and maximum values for many Light v2 commands are being enforced in conjunction with 3.3.2. </p>
+
+<p>A new command: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-add_driver_color_preset">ADD_DRIVER_COLOR_PRESET</a> has been included to add a new driver specific color preset.</p>
+
+<p>A new command: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-delete_driver_-color_-preset">DELETE_DRIVER_COLOR_PRESET</a> has been added to remove a driver configured color preset. </p>
+
+<p>A new command: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-dynamic_off">DYNAMIC_OFF</a> has been added to support UIs with an off command to pair with the DYNAMIC_ON command.</p>
+
+<p>A new command: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-dynamic_on">DYNAMIC_ON</a> has been added to allows UI&#39;s and programming to &quot;turn on&quot; a light involving both brightness and color in a single command</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-modify_driver_color_preset">MODIFY_DRIVER_COLOR_PRESET</a> has been included to change an existing driver color preset.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_brightness_stop">SET_BRIGHTNESS_STOP</a> has been added to stop a ramp if in progress.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_color_stop">SET_COLOR_STOP</a> has been added to stops a ramp of color if in progress.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_brightness_on_mode">SET_BRIGHTNESS_ON_MODE</a> has been added to maintain the On preset value.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_brightness_rate_default">SET_BRIGHTNESS_RATE_DEFAULT</a> has been added. This command is used in conjunction with generic On/Off commands to retrieve the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-update_brightness_rate_default">UPDATE_BRIGHTNESS_RATE_DEFAULT</a> value.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_color_on_mode">SET_COLOR_ON_MODE</a>  has beed added define color on mode.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_color_rate_default">SET_COLOR_RATE_DEFAULT</a> has been added. This command is used in conjunction with generic On/Off commands to retrieve the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-update_color_rate_default">UPDATE_COLOR_RATE_DEFAULT</a> value.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-update_brightness_on_mode">UPDATE_BRIGHTNESS_ON_MODE</a> has been added to obtain how a light should turn on with regards to brightness.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_brightness_rate_default">UPDATE_BRIGHTNESS_RATE_DEFAULT</a> has been added to provide a default value when a rate change is not provided.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-update_brightness_preset">UPDATE_BRIGHTNESS_PRESET</a> has beeb added to send a command when a press is changed.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-update_color_on_mode">UPDATE_COLOR_ON_MODE</a> has been added to obtain how a light should turn on with regards to color.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-update_color_preset">UPDATE_COLOR_PRESET</a> has been added to manage On and Dim values across various brands and models of lights.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-update_color_rate_default">UPDATE_COLOR_RATE_DEFAULT</a> has been added. This command is used in conjunction with generic On/Off commands to update the color rate default value.</p>
+
+<p><strong>Commands that have been Modified</strong></p>
+
+<p>The <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_color_target">SET_COLOR_TARGET</a> command has been enhanced with new parameters to support hue, saturation and presets. Additionally, this command previously included a parameter of RATE. This parameter name has changed to LIGHT_COLOR_TARGET_RATE.</p>
+
+<p><strong>Commands that have been Deprecated</strong></p>
+
+<p>GET_LIGHT_LEVEL </p>
+
+<p>GET_CONNECTED_STATE </p>
+
+<p>GET_PROPERTIES </p>
+
+<p><strong>Conditionals that have been Added</strong></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conditionals">IS_BRIGHTNESS</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conditionals">IS_BRIGHTNESS_TARGET</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conditionals">IS_COLOR_TARGET</a> </p>
+
+<p><strong>Notifications that have been Modified</strong></p>
+
+<p>The <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-protocol-notifications-light_brightness_changing">LIGHT_BRIGHTNESS_CHANGING</a> notify has been modified to include two new optional parameters: LIGHT_BRIGHTNESS_CURRENT_PRESET_ID and LIGHT_BRIGHTNESS_TARGET_PRESET_ID.</p>
+
+<p>The <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-protocol-notifications-light_color_changing">LIGHT_COLOR_CHANGING</a> notify has been modified to include parameters for Preset IDs. Additionally, this notify previously included a parameter of RATE. This parameter name has changed to LIGHT_COLOR_TARGET_RATE.</p>
+
+<p>The <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-protocol-notifications-light_color_changed">LIGHT_COLOR_CHANGED</a> notify has been modified to include a parameter for a Preset ID.</p>
+
+<p><strong>Variables that have been Added</strong></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-variables">Brightness Target Ramp Rate in Milliseconds</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-variables">Brightness Target Rate Remaining in Milliseconds</a></p>
+
+<p><strong>Variables that have been Deprecated</strong></p>
+
+<p>PRESET_LEVEL has been deprecated as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-update_brightness_on_mode">brightness_on_mode_preset</a> capability contains this value. </p>
+
+<p><strong>Known Issue(s)</strong></p>
+
+<p><em>Color Lighting Control may not Work on Some Drivers</em></p>
+
+<p>Currently, there is a known problem with color control not working on drivers that are looking for a RATE parameter in the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_color_target">SET_COLOR_TARGET </a>command. The RATE parameter was not correctly implemented due to the limits of support for color rate ramping in previous versions. We are finalizing the changes to make this fully work in 3.3.2. As a result, the “RATE” parameter name has been changed to “LIGHT_COLOR_TARGET_RATE”.</p>
+
+<p><em>Button Link Binding for Brightness Stop Functionality not Working</em></p>
+
+<p>A defect in 3.3.2 prevents keypad buttons bound to the Proxy’s BUTTON_LINK binding for Brightness Stop from working. This will be resolved in 3.3.3.</p>
+
+<h2 id='what-s-new-what-s-new-in-3-3-1'>What’s New in 3.3.1</h2>
+
+<p><strong>Light V2 Proxy</strong></p>
+
+<p>The capability: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_trace_tolerance">color_trace_tolerance</a> has been modified to accept a Delta value of &gt; .01. When provided, the CIELa*b* tolerance formula is used to determining if a color is the as another color in the system.</p>
+
+<p>The following Conversion Commands have been enhanced to include an optional parameter: gamut. This parameter allows for the specification of a gamut type for use in the conversions.</p>
+
+<ul>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorhsvtoxy">ColorHSVtoXY</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorxytohsv">ColorXYtoHSV</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorrgbtoxy">ColorRGBtoXY</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorxytorgb">ColorXYtoRGB</a></li>
+</ul>
+
+<p><strong>Camera Proxy</strong></p>
+
+<p>The Camera Proxy documentation has been has enhanced to include new information regarding:</p>
+
+<ul>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-camera-streams">Camera Streams</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-camera-streams">Driver Support for Multiple Streams</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-camera-streams">Support for Caching URLS</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-proxy-extras-interface-library">Support for The Extras Interface Library</a> </li>
+</ul>
+
+<p>A new command: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-proxy-commands-get_stream_urls">GET_STREAM_URLS</a> has been added. It is used to obtain URLs for a camera that does not have a constant URL like a Cloud based camera or for cameras that have a wider range of features and configurable options that can produce better customer experiences using various client</p>
+
+<p>A new notification: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-protocol-notifications-stream_urls_ready">STREAM_URLS_READY</a> has been added. This notify is used as a follow up to a GET_STREAM_URLS Synchronous call. This Notify will let a UI know that the URL information they requested is ready. </p>
+
+<p>New capabilities added to the Camera proxy include:  </p>
+
+<ul>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-capabilities-dynamic_urls_use_type">dynamic_urls_use_type</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-capabilities-requires_dynamic_stream_urls">requires_dynamic_stream_urls</a></li>
+</ul>
+
+<p>Dynamic Presets are now supported within the Camera Proxy.  The following preset functionality has been include: </p>
+
+<ul>
+<li>Save new presets.</li>
+<li>Change preset name.</li>
+<li>Recapture/update existing preset.</li>
+<li>Reorder presets.</li>
+<li>Delete a preset.</li>
+</ul>
+
+<p>Dynamic Presets require the following new Capability:</p>
+
+<ul>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-capabilities-has_dynamic_presets">has_dynamic_presets</a></li>
+</ul>
+
+<p>Dynamic Presets require the following new Notifications:</p>
+
+<ul>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-protocol-notifications-dynamic_urls_changed">DYNAMIC_URLS_CHANGED</a></li>
+</ul>
+
+<p>Dynamic Presets require the following new Commands:</p>
+
+<ul>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-proxy-commands-select_preset">SELECT_PRESET</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-proxy-commands-change_preset_name">CHANGE_PRESET_NAME</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-proxy-commands-modify_preset">MODIFY_PRESET</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-proxy-commands-delete_preset">DELETE_PRESET</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-proxy-commands-change_preset_order">CHANGE_PRESET_ORDER</a></li>
+</ul>
+
+<p>The following existing Camera Proxy capabilities are now Dynamic Capabilities:</p>
+
+<ul>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-capabilities-has_-pan">has_pan</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-capabilities-has_tilt">has_tilt</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-capabilities-has_zoom">has_zoom</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-capabilities-has_home">has_home</a></li>
+</ul>
+
+<h2 id='what-s-new-what-s-new-in-3-3-0'>What’s New in 3.3.0</h2><h3 id='what-s-new-what-s-new-in-3-3-0-light-proxy-color-enhancements'>Light Proxy Color Enhancements</h3>
+<p>This release of the 3.3.0 beta Proxy and Protocol Guide has been delivered to support the Light Proxy’s new color management functionality. This includes:</p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-light-v2-proxy-capabilities'>Light V2 Proxy Capabilities</h3>
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_correlated_temperature_max">color_correlated_temperature_max</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_correlated_temperature_min">color_correlated_temperature_min</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_rate_behavior">color_rate_behavior</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_rate_max">color_rate_max</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_rate_min">color_rate_min</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_trace_tolerance">color_trace_tolerance</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-supports_color">supports_color</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-supports_color_correlated_temperature">supports_color_correlated_temperature</a></p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-light-v2-proxy-commands'>Light V2 Proxy Commands</h3>
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_color_target">SET_COLOR_TARGET</a></p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-light-v2-proxy-conversion-commands'>Light V2 Proxy Conversion Commands</h3>
+<p>This section lists the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands">Commands</a> used for converting to/from hue, saturation and lightness (HSV) and red, blue and green (RGB).</p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-light-v2-proxy-conditionals'>Light V2 Proxy Conditionals</h3>
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conditionals">IS_COLOR</a></p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-light-v2-protocol-notifications'>Light v2 Protocol Notifications</h3>
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-protocol-notifications-light_color_changed">LIGHT_COLOR_CHANGED</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-protocol-notifications-light_color_changing">LIGHT_COLOR_CHANGING</a></p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-light-v2-proxy-events'>Light V2 Proxy Events</h3>
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-events">light_color_changed</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-events">light_color_changing</a></p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-light-v2-proxy-extras'>Light V2 Proxy Extras</h3>
+<p>New supporting <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-extras-interface-library">documentation</a>.</p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-advanced-lighting-scene-agent'>Advanced Lighting Scene Agent </h3>
+<p>New supporting <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#advanced-lighting-scene-agent">documentation</a>.</p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-light-driver-development-best-practices'>Light Driver Development Best Practices</h3>
+<p>A new section has been added to the Light V2 proxy content including <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-driver-development-best-practices">best practice recommendations</a> for light driver developers.</p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-audio-video-switch-display-adjustable-bindings'>Audio Video Switch Display Adjustable Bindings</h3>
+<p>O.S. releases 3.3.0 provides the ability to hide <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#display-adjustable-av-switch-bindings">AV Switch Bindings</a> that are not being used. This feature has been provided to better manage the UI display within ComposerPro.</p>
+
+<h2 id='what-s-new-what-s-new-in-3-2-3'>What’s New in 3.2.3</h2>
+
+<p><strong>Audio Equalization available on Navigators</strong></p>
+
+<p>The <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#amplifier-navigator-eq">Amplifier</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#audio-video-switch-navigator-eq">AV Switch</a> Proxies have been enhanced to support the ability to display audio EQ functions on devices running Navigator. The enhancement includes a set of new Proxy Commands, Notifications and Capabilities to support this functionality.</p>
+
+<p><strong>Dynamic Transport Controls on Navigators</strong></p>
+
+<p>Audio Video drivers now have the ability to define which <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-transport-controls-in-navigator">transport controls</a> are displayed on Navigators. This includes which buttons appear on the Button Bar as well as the Media Dashboard. This enhancement allows for the appropriate transport controls being displayed for each AV device.</p>
+
+<h2 id='what-s-new-what-s-new-in-3-2-2'>What’s New in 3.2.2</h2>
+
+<p><em>There were no changes to this content for Operating System 3.2.2.</em></p>
+
+<h2 id='what-s-new-what-s-new-in-3-2-1'>What’s New in 3.2.1</h2>
+
+<p><em>There were no changes to this content for Operating System 3.2.1.</em></p>
+
+<p><h2 id='what-s-new-what-s-new-in-3-2-0'>What’s New in 3.2.0</h2><h3 id='what-s-new-what-s-new-in-3-2-0-proxies-that-were-modified'>Proxies that were Modified** </h3>
+<p><strong>Security Proxy</strong>
+The <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#security-partition-notifications-request_default_user_code_">REQUEST_DEFAULT_USER_CODE</a> partition notification was added as a mechanism for the protocol driver
+to initiate the communication to get that default user code upon driver update.</p></p>
+
+<p>The following Security Protocol Notifications were deprecated from the SDK: ALARM, ALARM_CLEAR, AWAY, DISARM, HOME, TROUBLE. Please see the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#security-panel-notifications">Security Panel Notification</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#security-partition-notifications">Security Partition Notification</a> areas for the latest list of Notifies.</p>
+
+<p><h2 id='what-s-new-what-was-new-in-3-1-2'>What was New in 3.1.2</h2><h3 id='what-s-new-what-was-new-in-3-1-2-proxies-that-were-deprecated'>Proxies that were Deprecated** </h3>
+<p>The following Proxies were deprecated from the Proxy and Protocol Guide:</p></p>
+
+<ul>
+<li>iPod</li>
+<li>Load Controller</li>
+</ul>
+
+<p><h2 id='what-s-new-what-was-new-in-3-1-0'>What was New in 3.1.0</h2><h3 id='what-s-new-what-was-new-in-3-1-0-proxies-that-were-modified'>Proxies that were Modified** </h3>
+<p><strong>Light V2 Proxy</strong>
+light sample.c4i - A sample driver has been included to assist with better understanding the basic flow of commands from the Light Proxy as well as receiving protocol notifications. The driver can be found in the Samples directory under the root level of the DriverWorks SDK.zip file</p></p>
+
+<p><strong>Media Service Proxy</strong>
+Detail Screen Type - Information regarding the implementation of the Detail Type Screen has been added to the documentation.</p>
+
+<p><h2 id='what-s-new-what-was-new-in-o-s-3'>What was New in O.S.3</h2><h3 id='what-s-new-what-was-new-in-o-s-3-proxies-that-were-modified'>Proxies that were Modified** </h3>
+<p><strong>KeyPad Proxy</strong></p></p>
+
+<p>New Button Linking functionality has been added to the Proxy. Button Linking supports the ability of a driver interacting with a second driver using Button State and Button LED State. </p>
+
+<p><strong>Light (V2) Proxy</strong>
+LightV2 Proxy has been significantly enhanced in this release. It is recommended that Light Driver writers thoroughly review the Proxy content in this release. The changes included not only impact drivers written against OS 3. Previously delivered Light Proxy elements have been modified or in some cases deprecated. </p>
+
+<p>In OS 3, the proxy has been conceptually split into two components. The first being a Wall Control/Keypad portion and the second is a redesigned Light portion.The Light portion has been developed as a Bulb Library. The ultimate goal of the Bulb Library is to support ,more versatility for drivers to interrogate, group, control and manage individual drivers and bulbs. Bulb color, target level, minimum and maximum levels, cold start timing and other features are implemented in the Bulb Library. Dynamic Capabilities have also been added to the Light Portion. Note that all changes maintain backwards compatibility for driver side interaction. However, Navigators will have functionality deprecated due to performance reasons or improved ways of communicating with the driver.</p>
+
+<p><strong>Media Service Proxy</strong>
+Favoriting: In conjunction with the ability to &quot;Favorite&quot; Navigator UI screens in OS 3, drivers written using the Media Service Proxy can now provide the ability for end users to designate favorite media delivered through an Media Service Proxy driver such as Playlists, Albums, Tracks, Stations, Movies, TV Shows, etc. </p>
+
+<p>DashboardChanged Event: The DashboardChanged event now includes content on the use of custom icons and actions.</p>
+
+<p>Driver Notification Context Example: New code examples on have been added to the Media Service Proxy Driver Notification Prototype section in the Appendix.</p>
+
+<p><strong> Best Practices</strong>
+A new section called Best Practices has been added to the Proxy and Protocol Guide. This section contains information regarding the use cases that fall outside of the typical Proxy/Protocol driver implementation. This release contains Best Practice content on the following:</p>
+
+<p>Using the new Proxy-less command UPDATE PROPERTY. This is a non proxy-specific function that can be called from any device to change a property of any other device.</p>
+
+<p>OS 3 Navigator UI and Volume Control - Managing Volume Commands in conjunction with the use of OS 3&#39;s new volume control slider on the Control4 UI.</p>
+<h1 id='security-capabilities'>Security Capabilities</h1>
+
+<p>The following Capabilities are supported by the Security Proxy:</p>
+
+<p><strong><code>button_list</code></strong></p>
+
+<p>Defines buttons to be displayed on UI panel along with IDs for Keypad. locCode defines button&#39;s column (A...Z) and row (1...9). For example, A3 indicates column 1 row 3. Width defines button width (in columns).</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>True/False</td>
+</tr>
+</tbody></table>
+
+<p><strong><code>display_type</code></strong></p>
+
+<p>Define GUI display location and width.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>locCode</td>
+<td>location code</td>
+</tr>
+<tr>
+<td>width</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<h3 id='security-capabilities-what-was-new-in-o-s-3-example'>Example</h3>
+
+<p><code>&lt;location&gt;locCode&lt;/location&gt;</code>
+<code>&lt;width&gt;nWidth&lt;/width&gt;</code></p>
+
+<p><strong><code>has_alrm_cleared_event</code></strong></p>
+
+<p>Alarm capable of generating an event when alarm is cleared.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>True/False</td>
+</tr>
+</tbody></table>
+
+<p><strong><code>has_alrm_event</code></strong></p>
+
+<p>Alarm capable of generating an event when activated</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>True/False</td>
+</tr>
+</tbody></table>
+
+<p><strong><code>has_trouble_event</code></strong></p>
+
+<p>Alarm capable of generating an event when alarm trouble is detected.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>True/False</td>
+</tr>
+</tbody></table>
+<h1 id='security-panel-commands'>Security Panel Commands</h1>
+
+<h2 id='security-panel-commands-additional_panel_info'>ADDITIONAL_PANEL_INFO</h2>
+
+<p>Command from the UI to the Proxy and then forwarded on to the Protocol. Has no Return values. This command will only be sent after having received a <code>REQUEST_ADDITIONAL_INFO</code> notification from the protocol driver.  The protocol driver will send the notification to the proxy driver, which will send a <code>request_additional_info</code> DataToUI command to the UIs.  The UIs will then prompt the user for additional info. After the information is entered, the UI will generate this command to send back to the protocol driver. See the <code>REQUEST_ADDITIONAL_INFO</code> notification.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Info</td>
+<td>STR</td>
+<td>A copy of the <code>info_string</code> parameter that was passed with the <code>request_additional_info</code> request. The protocol driver will need this to know what actions to return to when it gets the new info.</td>
+</tr>
+<tr>
+<td>FunctionName</td>
+<td>STR</td>
+<td>A copy of the <code>function_name</code> parameter that was passed with the <code>request_additional_info</code> request. The protocol driver may need this to know what actions to return to when it gets the new info.</td>
+</tr>
+<tr>
+<td>NewInfo</td>
+<td>STR</td>
+<td>The new info provided by the UI in response to the <code>Request_additional_info</code> request.</td>
+</tr>
+<tr>
+<td>InterfaceID</td>
+<td>STR</td>
+<td>A unique (str) to identify which interface is sending this command.</td>
+</tr>
+</tbody></table>
+
+<h3 id='security-panel-commands-additional_panel_info-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='security-panel-commands-get_all_pgm_info'>GET_ALL_PGM_INFO</h2>
+
+<p>Request to return information about each PGM active on the panel.  The information consists of its id and a flag indicating if it is currently opened.</p>
+
+<h3 id='security-panel-commands-get_all_pgm_info-parameters'>Parameters</h3>
+
+<p><code>None</code></p>
+
+<table><thead>
+<tr>
+<th>Return</th>
+<th>Description</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>PGM ID</td>
+<td>INT</td>
+<td>PGM ID</td>
+</tr>
+<tr>
+<td></td>
+<td>BOOL</td>
+<td>True, False: True if PGM is Open.</td>
+</tr>
+</tbody></table>
+
+<h2 id='security-panel-commands-get_all_partition_info'>GET_ALL_PARTITION_INFO</h2>
+
+<p>Request to return information to the panel proxy about each of its partitions.  The information consists of its id, if it’s enabled, its binding id, and its current state.</p>
+
+<h3 id='security-panel-commands-get_all_partition_info-parameters'>Parameters</h3>
+
+<p><code>None</code></p>
+
+<table><thead>
+<tr>
+<th>Return</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Partition ID</td>
+<td>INT</td>
+<td>Partition ID</td>
+</tr>
+<tr>
+<td></td>
+<td>BOOL</td>
+<td>True, False: True if this partition is Open.</td>
+</tr>
+<tr>
+<td>Binding ID</td>
+<td>INT</td>
+<td>Binding ID</td>
+</tr>
+<tr>
+<td>State</td>
+<td>STR</td>
+<td>State</td>
+</tr>
+</tbody></table>
+
+<h2 id='security-panel-commands-get_all_zone_info'>GET_ALL_ZONE_INFO</h2>
+
+<p>Request to return information about each zone on the panel. The information consists of its id, name, type_id, and  a list of partitions the zone is included in, a flag indicating if it can be bypassed, and a flag indicating if it is currently opened.</p>
+
+<h3 id='security-panel-commands-get_all_zone_info-parameters'>Parameters</h3>
+
+<p><code>None</code></p>
+
+<table><thead>
+<tr>
+<th>Return</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ZONE ID</td>
+<td>INT</td>
+<td>Zone ID</td>
+</tr>
+<tr>
+<td>ZONE NAME</td>
+<td>STR</td>
+<td>Zone Name</td>
+</tr>
+<tr>
+<td>ZONE TYPE</td>
+<td>INT</td>
+<td>Zone Type ID</td>
+</tr>
+<tr>
+<td></td>
+<td>TABLE</td>
+<td>Partitions the Zone is included in.</td>
+</tr>
+<tr>
+<td></td>
+<td>BOOL</td>
+<td>True, False: True if Zone can be bypassed.</td>
+</tr>
+<tr>
+<td></td>
+<td>TBOOL</td>
+<td>True, False: True if Zone is currently Open.</td>
+</tr>
+<tr>
+<td>State</td>
+<td>STR</td>
+<td>State</td>
+</tr>
+</tbody></table>
+
+<h2 id='security-panel-commands-get_panel_setup'>GET_PANEL_SETUP</h2>
+
+<p>Calls [GET_ALL_PARTITION_INFO\]<a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#security-panel-commands-get_all_partition_info">1</a></p>
+
+<h2 id='security-panel-commands-pgm_close'>PGM_CLOSE</h2>
+
+<p>Sends an ‘close’ command to the targeted PGM.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>PGM ID</td>
+<td>PINT</td>
+<td>The id of the targeted PGM.</td>
+</tr>
+</tbody></table>
+
+<h2 id='security-panel-commands-pgm_open'>PGM_OPEN</h2>
+
+<p>Sends an ‘open’ command to the targeted PGM.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>PGM ID</td>
+<td>INT</td>
+<td>The id of the targeted PGM.</td>
+</tr>
+</tbody></table>
+
+<h2 id='security-panel-commands-pgm_toggle'>PGM_TOGGLE</h2>
+
+<p>Sends an ‘toggle’ command to the targeted PGM.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>PGM ID</td>
+<td>INT</td>
+<td>The id of the targeted PGM.</td>
+</tr>
+</tbody></table>
+
+<h2 id='security-panel-commands-pgm_trigger'>PGM_TRIGGER</h2>
+
+<p>Sends an ‘trigger’ command to the targeted PGM.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>PGM ID</td>
+<td>INT</td>
+<td>The id of the targeted PGM.</td>
+</tr>
+</tbody></table>
+
+<h2 id='security-panel-commands-read_panel_info'>READ_PANEL_INFO</h2>
+
+<p>Send a command to the panel to read its partition and zone information.</p>
+
+<h2 id='security-panel-commands-set_panel_time_date'>SET_PANEL_TIME_DATE</h2>
+
+<p>Set the current date and time on the panel. This command is only available if the ‘can_set_time’ capability is set to ‘true’.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>YEAR</td>
+<td>INT</td>
+<td>The current year (4 digits)</td>
+</tr>
+<tr>
+<td>MONTH</td>
+<td>INT</td>
+<td>The current month (2 digits 01-12)</td>
+</tr>
+<tr>
+<td>DAY</td>
+<td>INT</td>
+<td>The current day of the month (2 digits 01-31)</td>
+</tr>
+<tr>
+<td>HOUR:</td>
+<td>INT</td>
+<td>The current hour in 24-hour time (2 digits 00-23)</td>
+</tr>
+<tr>
+<td>MINUTE</td>
+<td>INT</td>
+<td>The current minute in the hour (2 digits 00-59)</td>
+</tr>
+<tr>
+<td>SECOND</td>
+<td>INT</td>
+<td>The current second in the minute (2 digits 00-59)</td>
+</tr>
+<tr>
+<td>INTERFACE ID:</td>
+<td>STR</td>
+<td>Unique string ID indicating from where the command originated.</td>
+</tr>
+</tbody></table>
+
+<h2 id='security-panel-commands-set_partition_enabled'>SET_PARTITION_ENABLED</h2>
+
+<p>Set a flag to designate whether or not the specified partition is currently enabled. This command is only available if the ‘can_activate_partitions’ capability is set to ‘true’.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>PARTITION ID</td>
+<td>STR</td>
+<td>PARTITION ID: The id number of the targeted partition.</td>
+</tr>
+<tr>
+<td>ENABLED</td>
+<td>BOOL</td>
+<td>ENABLED ‘True’ if this partition should now be enabled, False if not.</td>
+</tr>
+</tbody></table>
+
+<h2 id='security-panel-commands-send_pgm_command'>SEND_PGM_COMMAND</h2>
+
+<p>Send a command to a PGM on the panel.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>PGM ID</td>
+<td>INT</td>
+<td>The id of the targeted PGM.</td>
+</tr>
+<tr>
+<td>ENABLED</td>
+<td>BOOL</td>
+<td>‘True’ if this partition should now be enabled, False if not.</td>
+</tr>
+<tr>
+<td>COMMAND</td>
+<td>STR</td>
+<td>Possible commands are: ‘open’, ‘close’, ‘toggle’, and ‘trigger’.</td>
+</tr>
+</tbody></table>
+
+<h2 id='security-panel-commands-set_zone_info'>SET_ZONE_INFO</h2>
+
+<p>Set the information about a specified zone in the driver.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>int</td>
+<td>ZONE_ID: The id of the targeted zone.</td>
+</tr>
+<tr>
+<td>str</td>
+<td>NAME: The name by which we will now refer to this zone.</td>
+</tr>
+<tr>
+<td>str</td>
+<td>TYPE_ID: The type of zone that the Control4 project will consider this zone. This will determine which icons will show up when it is referenced.  Valid values are:</td>
+</tr>
+<tr>
+<td></td>
+<td>”CONTACT_SENSOR&quot;</td>
+</tr>
+<tr>
+<td></td>
+<td>”EXTERIOR_DOOR&quot;</td>
+</tr>
+<tr>
+<td></td>
+<td>“EXTERIOR_WINDOW&quot;</td>
+</tr>
+<tr>
+<td></td>
+<td>“INTERIOR_DOOR&quot;</td>
+</tr>
+<tr>
+<td></td>
+<td>&quot;MOTION_SENSOR&quot;</td>
+</tr>
+<tr>
+<td></td>
+<td>&quot;FIRE&quot;</td>
+</tr>
+<tr>
+<td></td>
+<td>&quot;GAS&quot;</td>
+</tr>
+<tr>
+<td></td>
+<td>&quot;CARBON_MONOXIDE&quot;</td>
+</tr>
+<tr>
+<td></td>
+<td>&quot;HEAT&quot;</td>
+</tr>
+<tr>
+<td></td>
+<td>&quot;WATER&quot;</td>
+</tr>
+<tr>
+<td></td>
+<td>&quot;SMOKE&quot;</td>
+</tr>
+<tr>
+<td></td>
+<td>&quot;PRESSURE&quot;</td>
+</tr>
+<tr>
+<td></td>
+<td>&quot;GLASS_BREAK&quot;</td>
+</tr>
+<tr>
+<td></td>
+<td>&quot;GATE&quot;</td>
+</tr>
+<tr>
+<td></td>
+<td>&quot;GARAGE_DOOR&quot;</td>
+</tr>
+<tr>
+<td>bool</td>
+<td>DATA_GUARDED: ‘True’ if these new settings should be protected so that information from the panel doesn’t overwrite them.</td>
+</tr>
+<tr>
+<td>str</td>
+<td>INTERFACE_ID: Unique string ID indicating from where the command originated.</td>
+</tr>
+</tbody></table>
+<h1 id='security-panel-capabilities'>Security Panel Capabilities</h1>
+
+<p>The following Capabilities are supported with the Security System Controller Panel:</p>
+
+<p><code>&lt;can_set_time&gt;&lt;/can_set_time&gt;</code>
+Defaults to true.</p>
+
+<p><code>&lt;can_activate_partitions&gt;&lt;/can_activate_partitions&gt;</code>
+Defaults to true.</p>
+<h1 id='security-panel-conditionals'>Security Panel Conditionals</h1>
+
+<p>The following Conditionals are supported with the Security System Controller Panel. System programming conditionals are handled by the proxy and return a true or false:</p>
+
+<p><code>IN_TROUBLE</code>: Returns True if the system is currently in a TROUBLE state.</p>
+<h1 id='security-panel-events'>Security Panel Events</h1>
+
+<p>The following Events are supported with the Security System Controller Panel. </p>
+
+<p><code>TROUBLE</code>: Fired when the security panel receives a TROUBLE notification.</p>
+
+<p><code>TROUBLE_CLEAR</code>: Fired when the TROUBLE state is cleared.</p>
+<h1 id='security-panel-notifications'>Security Panel Notifications</h1>
+
+<h2 id='security-panel-notifications-overview'>Overview</h2>
+
+<p>Sending Protocol Notifications requires the use of the <a href="https://snap-one.github.io/docs-driverworks-api/#proxy-interface-sendtoproxy">SendToProxy</a> API.</p>
+
+<p>The first parameter for C4:SendToProxy is a binding id.  The API doesn&#39;t not recognize Partition Ids. The assumption is made that the panel binding defined in driver.xml is on binding id 5001. Then partition 1 is on binding id 5002, partition 2 on 5003, etc.</p>
+
+<p>The second parameter is the text of the particular notification being sent. The Proxy knows the information being sent based off of this text. For example, when the parameter &quot;PARTITION_ENABLED&quot; is sent through SendtoProxy, the Camera proxy knows parameter type information that &quot;PARTITION_ENABLED&quot; should contain.</p>
+
+<p>The third parameter is a table of the parameters for the particular notification.  In this case, the PARTITION_ENABLED notification takes one parameter named &quot;ENABLED&quot;.  Its value is either &quot;true&quot; or &quot;false&quot;. Note that the third parameter could also be sent as a string rather than a table.  In this case the are no parameter names.  The whole string is just interpreted as data for the notification.  This usage is mostly deprecated, but some notifications (such as DISPLAY_TEXT) started out doing this and have never been changed so they don&#39;t break backward compatibility.</p>
+
+<p>The fourth parameter is just the word &quot;NOTIFY&quot;. This is just some extra information for BindingManager so it won&#39;t try to make assumptions about the type of message based on binding ids. It is recommended that it is included in C4:SendToProxy.</p>
+
+<p>To the right are an examples fully formed PANEL_ZONE_STATE and ALL_ZONES_INFO Notifications being sent using the SendToProxy API.</p>
+
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="c1">-- PANEL_ZONE_STATE Example</span>
+
+<span class="k">function</span> <span class="nf">SendZoneState</span><span class="p">(</span><span class="n">ZoneId</span><span class="p">,</span> <span class="n">IsOpen</span><span class="p">,</span> <span class="n">AreInitializing</span><span class="p">)</span>
+    <span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span> <span class="mi">5001</span><span class="p">,</span>
+                    <span class="s2">"PANEL_ZONE_STATE"</span><span class="p">,</span>
+                    <span class="p">{</span>   <span class="n">ZONE_ID</span> <span class="o">=</span> <span class="n">ZoneId</span><span class="p">,</span>
+                        <span class="n">ZONE_OPEN</span> <span class="o">=</span> <span class="n">IsOpen</span><span class="p">,</span>
+                        <span class="n">INITIALIZING</span> <span class="o">=</span> <span class="n">AreInitializing</span>
+                    <span class="p">},</span>
+                    <span class="s2">"NOTIFY"</span>
+                  <span class="p">)</span>
+<span class="k">end</span>
+
+
+
+<span class="c1">-- ALL_ZONES Example</span>
+
+<span class="k">function</span> <span class="nf">SendAllZoneInfo</span><span class="p">()</span>
+
+    <span class="kd">local</span> <span class="n">ZoneInfoXMLStr</span> <span class="o">=</span>
+    <span class="s">[[&lt;zones&gt;
+        &lt;zone&gt;
+            &lt;id&gt;1&lt;/id&gt;
+            &lt;name&gt;Back Door&lt;/name&gt;
+            &lt;type_id&gt;2&lt;/type_id&gt;
+            &lt;partitions&gt;&lt;/partitions&gt;
+            &lt;can_bypass&gt;false&lt;/can_bypass&gt;
+            &lt;is_open&gt;false&lt;/is_open&gt;
+        &lt;/zone&gt;
+        &lt;zone&gt;
+            &lt;id&gt;2&lt;/id&gt;
+            &lt;name&gt;Front Door&lt;/name&gt;
+            &lt;type_id&gt;2&lt;/type_id&gt;
+            &lt;partitions&gt;&lt;/partitions&gt;
+            &lt;can_bypass&gt;false&lt;/can_bypass&gt;
+            &lt;is_open&gt;false&lt;/is_open&gt;
+        &lt;/zone&gt;
+        &lt;zone&gt;
+            &lt;id&gt;3&lt;/id&gt;
+            &lt;name&gt;Back Window&lt;/name&gt;
+            &lt;type_id&gt;3&lt;/type_id&gt;
+            &lt;partitions&gt;&lt;/partitions&gt;
+            &lt;can_bypass&gt;true&lt;/can_bypass&gt;
+            &lt;is_open&gt;true&lt;/is_open&gt;
+        &lt;/zone&gt;
+        &lt;zone&gt;
+            &lt;id&gt;4&lt;/id&gt;
+            &lt;name&gt;Zone 4&lt;/name&gt;
+            &lt;type_id&gt;5&lt;/type_id&gt;
+            &lt;partitions&gt;&lt;/partitions&gt;
+            &lt;can_bypass&gt;true&lt;/can_bypass&gt;
+            &lt;is_open&gt;false&lt;/is_open&gt;
+        &lt;/zone&gt;
+    &lt;/zones&gt;]]</span>
+
+    <span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span> <span class="mi">5001</span><span class="p">,</span>
+                    <span class="s2">"ALL_ZONES_INFO"</span><span class="p">,</span>
+                    <span class="n">ZoneInfoXMLStr</span><span class="p">,</span>
+                    <span class="s2">"NOTIFY"</span>
+                  <span class="p">)</span>
+<span class="k">end</span>
+</code></pre></div>
+
+<h2 id='security-panel-notifications-all_pgms_info'>ALL_PGMS_INFO</h2>
+
+<p>Sends and XML string of all PGMs (relays) and respective PGM information.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xml</td>
+<td>XML data. See example.</td>
+</tr>
+</tbody></table>
+
+<h3 id='security-panel-notifications-all_pgms_info-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;pgms&gt;</span>
+        <span class="nt">&lt;pgm&gt;</span>
+            <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;is_open&gt;</span>true<span class="nt">&lt;/is_open&gt;</span>
+        <span class="nt">&lt;/pgm&gt;</span>
+        <span class="nt">&lt;pgm&gt;</span>
+            <span class="nt">&lt;id&gt;</span>2<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;is_open&gt;</span>false<span class="nt">&lt;/is_open&gt;</span>
+        <span class="nt">&lt;/pgm&gt;</span>
+        <span class="nt">&lt;pgm&gt;</span>
+            <span class="nt">&lt;id&gt;</span>3<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;is_open&gt;</span>false<span class="nt">&lt;/is_open&gt;</span>
+        <span class="nt">&lt;/pgm&gt;</span>
+<span class="nt">&lt;/pgms&gt;</span>
+</code></pre></div>
+<h2 id='security-panel-notifications-all_zones_info'>ALL_ZONES_INFO</h2>
+<p>Sends and XML string of all zones and respective zone information.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xml</td>
+<td>XML data. See example.</td>
+</tr>
+</tbody></table>
+<h3 id='security-panel-notifications-all_zones_info-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;zones&gt;</span>
+        <span class="nt">&lt;zone&gt;</span>
+            <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;name&gt;</span>Back Door<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;type_id&gt;</span>2<span class="nt">&lt;/type_id&gt;</span>
+            <span class="nt">&lt;partitions&gt;&lt;/partitions&gt;</span>
+            <span class="nt">&lt;can_bypass&gt;</span>false<span class="nt">&lt;/can_bypass&gt;</span>
+            <span class="nt">&lt;is_open&gt;</span>false<span class="nt">&lt;/is_open&gt;</span>
+        <span class="nt">&lt;/zone&gt;</span>
+        <span class="nt">&lt;zone&gt;</span>
+            <span class="nt">&lt;id&gt;</span>2<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;name&gt;</span>Front Door<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;type_id&gt;</span>2<span class="nt">&lt;/type_id&gt;</span>
+            <span class="nt">&lt;partitions&gt;&lt;/partitions&gt;</span>
+            <span class="nt">&lt;can_bypass&gt;</span>false<span class="nt">&lt;/can_bypass&gt;</span>
+            <span class="nt">&lt;is_open&gt;</span>false<span class="nt">&lt;/is_open&gt;</span>
+        <span class="nt">&lt;/zone&gt;</span>
+        <span class="nt">&lt;zone&gt;</span>
+            <span class="nt">&lt;id&gt;</span>3<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;name&gt;</span>Back Window<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;type_id&gt;</span>3<span class="nt">&lt;/type_id&gt;</span>
+            <span class="nt">&lt;partitions&gt;&lt;/partitions&gt;</span>
+            <span class="nt">&lt;can_bypass&gt;</span>true<span class="nt">&lt;/can_bypass&gt;</span>
+            <span class="nt">&lt;is_open&gt;</span>true<span class="nt">&lt;/is_open&gt;</span>
+        <span class="nt">&lt;/zone&gt;</span>
+        <span class="nt">&lt;zone&gt;</span>
+            <span class="nt">&lt;id&gt;</span>4<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;name&gt;</span>Zone 4<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;type_id&gt;</span>5<span class="nt">&lt;/type_id&gt;</span>
+            <span class="nt">&lt;partitions&gt;&lt;/partitions&gt;</span>
+            <span class="nt">&lt;can_bypass&gt;</span>true<span class="nt">&lt;/can_bypass&gt;</span>
+            <span class="nt">&lt;is_open&gt;</span>false<span class="nt">&lt;/is_open&gt;</span>
+        <span class="nt">&lt;/zone&gt;</span>
+<span class="nt">&lt;/zones&gt;</span>
+</code></pre></div>
+<h2 id='security-panel-notifications-panel_add_pgm'>PANEL_ADD_PGM</h2>
+<p>Add a PGM (relay) to the panel.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>PGM ID</td>
+<td>NUM</td>
+<td>ID of the new PGM</td>
+</tr>
+</tbody></table>
+<h3 id='security-panel-notifications-panel_add_pgm-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"PANEL_ADD_PGM"</span><span class="p">,</span> <span class="p">{</span> <span class="n">PGM_ID</span> <span class="o">=</span> <span class="mi">1</span> <span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='security-panel-notifications-sync_panel_info'>SYNC_PANEL_INFO</h2>
+<p>Tells the Panel proxy that the hardware has been initialized and is ready to function.</p>
+<h3 id='security-panel-notifications-sync_panel_info-parameters'>Parameters</h3>
+
+<p><code>None</code></p>
+
+<h3 id='security-panel-notifications-sync_panel_info-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"PANEL_INITIALIZED"</span><span class="p">,</span> <span class="p">{},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='security-panel-notifications-panel_partition_state'>PANEL_PARTITION_STATE</h2>
+<p>Lets the panel know the state of the given partition.  This is used in the  Properties display in ComposerPro.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>PARTITION ID</td>
+<td>NUM</td>
+<td>ID of the target partition.</td>
+</tr>
+<tr>
+<td>STATE</td>
+<td>STR</td>
+<td>A string listing its state. Supported values include: <code>&quot;ARMED&quot; &quot;ALARM&quot; &quot;OFFLINE&quot; &quot;EXIT_DELAY&quot; &quot;ENTRY_DELAY&quot; &quot;DISARMED_READY&quot; &quot;DISARMED_NOT_READY&quot; &quot;CONFIRMATION_REQUIRED&quot;</code></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>STR</td>
+<td>Further information on the state. For example, it could be &quot;Stay&quot; for a type of ARMED. It could be &quot;Burglary&quot; for a type of ALARM. Can be &quot;&quot; if not needed.</td>
+</tr>
+</tbody></table>
+<h3 id='security-panel-notifications-panel_partition_state-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">5001</span><span class="p">,</span> <span class="s2">"PANEL_PARTITION_STATE"</span><span class="p">,</span> <span class="p">{</span><span class="n">PARTITION_ID</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">STATE</span> <span class="o">=</span> <span class="s2">"ARMED"</span><span class="p">,</span> <span class="n">TYPE</span> <span class="o">=</span> <span class="s2">"Stay"</span><span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='security-panel-notifications-panel_pgm_state'>PANEL_PGM_STATE</h2>
+<p>Current status of a PGM (relay): open or closed</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>PGM ID</td>
+<td>NUM</td>
+<td>ID of the target PGM</td>
+</tr>
+<tr>
+<td>PGM OPEN</td>
+<td>BOOL</td>
+<td>&quot;true&quot; if the PGM is opened. &quot;false&quot; if it is closed.</td>
+</tr>
+<tr>
+<td>INITIALIZING</td>
+<td>BOOL</td>
+<td>&quot;true&quot; if the PGM is initializing. This will prevent programming from firing.</td>
+</tr>
+</tbody></table>
+<h3 id='security-panel-notifications-panel_pgm_state-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"PANEL_PGM_STATE"</span><span class="p">,</span> <span class="p">{</span> <span class="n">PGM_ID</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">PGM_OPEN</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="n">INITIALIZING</span> <span class="o">=</span> <span class="kc">false</span> <span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='security-panel-notifications-panel_remove_pgm'>PANEL_REMOVE_PGM</h2>
+<p>Remove a PGM (relay) from the panel.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>PGM ID</td>
+<td>NUM</td>
+<td>ID of the PGM being removed</td>
+</tr>
+</tbody></table>
+<h3 id='security-panel-notifications-panel_remove_pgm-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"PANEL_REMOVE_PGM"</span><span class="p">,</span> <span class="p">{</span> <span class="n">PGM_ID</span> <span class="o">=</span> <span class="mi">1</span> <span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='security-panel-notifications-panel_remove_-zone'>PANEL_REMOVE_ ZONE</h2>
+<p>Remove a zone from the panel.  </p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>NUM</td>
+<td>ID of the target zone.</td>
+</tr>
+</tbody></table>
+<h3 id='security-panel-notifications-panel_remove_-zone-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"PANEL_REMOVE_ZONE"</span><span class="p">,</span> <span class="p">{</span> <span class="n">ID</span> <span class="o">=</span> <span class="mi">2</span><span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='security-panel-notifications-panel_zone_info'>PANEL_ZONE_INFO</h2>
+<p>Information about a given zone that Navigator or Composer can display.  </p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th style="text-align: left"></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>num</td>
+<td>ID: ID of the target zone.</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>str</td>
+<td>NAME: The zone&#39;s name either read from the panel or assigned by the user. Will default to &quot;Zone NN&quot;</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>num</td>
+<td>TYPE ID: The type of zone so that the Control4 system can map its sensor binding to a type of sensor. Current valid types with their ids are:</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td></td>
+<td>UNKNOWN   = 0</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td></td>
+<td>CONTACT SENSOR= 1</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td></td>
+<td>EXTERIOR DOOR= 2</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td></td>
+<td>EXTERIOR WINDOW= 3</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td></td>
+<td>INTERIOR DOOR = 4</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td></td>
+<td>MOTION SENSOR = 5</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td></td>
+<td>FIRE = 6</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td></td>
+<td>GAS = 7</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td></td>
+<td>CARBON MONOXIDE   = 8</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td></td>
+<td>HEAT = 9</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td></td>
+<td>WATER = 10</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td></td>
+<td>SMOKE = 11</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td></td>
+<td>PRESSURE = 12</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td></td>
+<td>GLASSBREAK= 13</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td></td>
+<td>GATE = 14</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td></td>
+<td>GARAGE DOOR = 15</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>str</td>
+<td>PARTITIONS: Comma-delimited string of numbers indicating which partitions this zone is a  member of.  For example, if this zone is included in both partitions 1 and 3, the string would be &quot;1,3&quot;</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td>bool</td>
+<td>IS\_OPEN: &quot;true&quot; = open. &quot;false&quot; = closed.</td>
+<td style="text-align: left"></td>
+</tr>
+</tbody></table>
+<h3 id='security-panel-notifications-panel_zone_info-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"PANEL_ZONE_INFO"</span><span class="p">,</span> <span class="p">{</span> <span class="n">ID</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">NAME</span> <span class="o">=</span> <span class="s2">"ENTRYWAY"</span><span class="p">,</span> <span class="n">TYPE_ID</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">PARTITIONS</span> <span class="o">=</span> <span class="s2">"1,3"</span><span class="p">,</span> <span class="n">IS_OPEN</span> <span class="o">=</span> <span class="kc">true</span><span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='security-panel-notifications-panel_zone_state'>PANEL_ZONE_STATE</h2>
+<p>Sends the current status of a zone:  open or closed.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ZONE ID</td>
+<td>NUM</td>
+<td>ID of the target zone</td>
+</tr>
+<tr>
+<td>ZONE OPEN</td>
+<td>BOOL</td>
+<td>&quot;true&quot; if the zone is opened. &quot;false&quot; if it is closed.</td>
+</tr>
+<tr>
+<td>INITIALIZING</td>
+<td>BOOL</td>
+<td>&quot;true&quot; if the zone is initializing. This will prevent programming from firing.</td>
+</tr>
+</tbody></table>
+<h3 id='security-panel-notifications-panel_zone_state-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"PANEL_ZONE_STATE"</span><span class="p">,</span> <span class="p">{</span> <span class="n">ZONE_ID</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">ZONE_OPEN</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="n">INITIALIZING</span> <span class="o">=</span> <span class="kc">false</span> <span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='security-panel-notifications-request_additional_panel_info'>REQUEST_ADDITIONAL_PANEL_INFO</h2>
+<p>This is a notification that can allow two-way communication with the keypad.  This command will cause Navigator to bring up the keypad screen with the prompt string.  After the user types in something on the keypad, it will be returned to our driver through the ADDITIONAL_PANEL_INFO command.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>str</td>
+<td>PROMPT: The prompt string that will show up above the keypad on the Navigator string.</td>
+</tr>
+<tr>
+<td>str</td>
+<td>INFO_STRING: This is a string that will not be shown to the user, but will be returned with the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#security-panel-notifications-request_additional_panel_info">ADDITIONAL_INFO</a> command.  It is a way that information can be built up through multiple iterations of calls to REQUEST_ADDITIONAL_PANEL_INFO</td>
+</tr>
+<tr>
+<td>str</td>
+<td>FUNCTION_NAME: This will not be shown to the user but will also be returned with the ADDITIONAL_INFO command. It is the function name of the handler in the driver code that should be called when the new information arrives.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td>MASK_DATA: “true&quot; if the information being entered on the screen (such as a user code) should not be readable. If the flag is true, then each character will show up on the Navigator screen as a dot.</td>
+</tr>
+<tr>
+<td>str</td>
+<td>INTERFACE_ID: Unique identification string for one of the UIs that the prompt will appear on.</td>
+</tr>
+</tbody></table>
+<h3 id='security-panel-notifications-request_additional_panel_info-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"REQUEST_ADDITIONAL_PANEL_INFO"</span><span class="p">,</span> <span class="p">{</span> <span class="n">PROMPT</span> <span class="o">=</span>
+<span class="n">promptstring</span><span class="p">,</span> <span class="n">INFO_STRING</span> <span class="o">=</span> <span class="n">infostring</span><span class="p">,</span> <span class="n">FUNCTION_NAME</span> <span class="o">=</span> <span class="n">functionstring</span><span class="p">,</span> <span class="n">MASK_DATA</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="n">INTERFACE_ID</span> <span class="o">=</span> <span class="n">interfaceid</span> <span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='security-panel-notifications-sync_panel_info'>SYNC_PANEL_INFO</h2>
+<p>This is a request to the proxy driver to re-send all of the information it has about the panel to ensure synchronization.</p>
+<h3 id='security-panel-notifications-sync_panel_info-parameters'>Parameters</h3>
+
+<p><code>None</code></p>
+
+<p><h3 id='security-panel-notifications-sync_panel_info-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">&quot;SYNC_PANEL_INFO&quot;</span><span class="p">,</span> <span class="p">{},</span>  <span class="s2">&quot;NOTIFY&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='security-panel-notifications-trouble_clear'>TROUBLE_CLEAR</h2>
+<p>Clear the trouble flag.  </p></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>IDENTIFIER</td>
+<td>NUM</td>
+<td style="text-align: left">Unique number for the trouble instance that has been resolved.</td>
+</tr>
+</tbody></table>
+
+<p><h3 id='security-panel-notifications-trouble_clear-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">&quot;TROUBLE_CLEAR&quot;</span><span class="p">,</span> <span class="p">{</span> <span class="n">IDENTIFIER</span> <span class="o">=</span> <span class="mi">10</span> <span class="p">},</span> <span class="s2">&quot;NOTIFY&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='security-panel-notifications-trouble_start'>TROUBLE_START</h2>
+<p>List trouble that the panel is having on the Composer Property Page and on each of the Navigator partition screens.  </p></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>TROUBLE TEXT</td>
+<td>STR</td>
+<td style="text-align: left">Text listing the type of trouble. “For example: “Battery&quot;, &quot;Communication&quot;, etc.)</td>
+</tr>
+<tr>
+<td>DENTIFIER</td>
+<td>NUM</td>
+<td style="text-align: left">Unique number for this instance of trouble.</td>
+</tr>
+</tbody></table>
+
+<p><h3 id='security-panel-notifications-trouble_start-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">&quot;TROUBLE_START&quot;</span><span class="p">,</span> <span class="p">{</span> <span class="n">TROUBLE_TEXT</span> <span class="o">=</span> <span class="s2">&quot;Battery&quot;</span><span class="p">,</span> <span class="n">IDENTIFIER</span> <span class="o">=</span> <span class="mi">10</span> <span class="p">},</span> <span class="s2">&quot;NOTIFY&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<h1 id='security-panel-variables'>Security Panel Variables</h1>
+
+<p>The Security System Controller Panel supports the following variable:</p>
+
+<p><code>TROUBLE_TEXT</code>  String representing the text which will be displayed.</p>
+<h1 id='security-partition-capabilities'>Security Partition Capabilities</h1>
+
+<p>The following Capabilities are supported with the Security System Controller Partition:</p>
+
+<p><code>ui_version</code> 
+Integer. Defaults to 2.
+A value of 2 means that the new user interface is used.  If the interface changes in the future, this number may increase again. </p>
+
+<p><code>arm_states</code>
+Comma Delimited String. 
+A comma delimited string containing the possible arm states this system supports.</p>
+
+<p><code>has_fire</code>
+Boolean. Defaults to false.
+True if this partition supports the “Fire” emergency button. If True, Navigator will show a fire emergency icon.</p>
+
+<p><code>has_medical</code>
+Boolean. Defaults to false.
+True if this partition supports the “Medical” emergency button. If True, Navigator will show a medical emergency icon.</p>
+
+<p><code>has_police</code>
+Boolean. Defaults to false.
+True if this partition supports the “Police” emergency button. If True, Navigator will show a police emergency icon.</p>
+
+<p><code>has_panic</code>
+Boolean. Defaults to false.
+True if this partition supports the “Panic” emergency button. If True, Navigator will show a fire emergency icon.</p>
+
+<p><code>functions</code>
+Comma Delimited String. Default to &quot;&quot;
+A comma delimited string containing the functions supported by the protocol driver. Navigator will show these under its &#39;Functions&#39; button on the main screen. When one of the functions are selected a command will be sent to the driver with the function name.  It is up to the driver writer to implement that function.</p>
+
+<p><code>star_label</code>
+string Default to <code>*</code>
+The text that will be shown on the  <code>* button</code> on the keypad.</p>
+
+<p><code>pound_label</code>
+string Default to “#”
+The text that will be shown on the # button on the keypad.
+ </p>
+
+<p><code>button_A</code> 
+xml string
+<code>&lt;visible\&gt;true\&lt;/visible\&gt;</code>
+Designates whether button “A” will be visible on the UI keypad.
+<code>&lt;label&gt;This is Button A&lt;/label&gt;</code>
+The text that will appear on button “A” on the UI keypad (if visible)  Defaults to “A”
+ </p>
+
+<p><code>button_B</code>
+xml string
+<code>&lt;visible\&gt;true\&lt;/visible&gt;</code>
+Designates whether button “B” will be visible on the UI keypad.
+<code>&lt;label&gt;This is Button B&lt;/label&gt;</code>
+The text that will appear on button “B” on the UI keypad (if visible)
+Defaults to “B”
+ </p>
+
+<p><code>button_C</code>
+xml string
+<code>&lt;visible&gt;true&lt;/visible&gt;</code>
+Designates whether button “C” will be visible on the UI keypad.
+<code>&lt;label&gt;This is Button C&lt;/label&gt;</code>
+The text that will appear on button “C” on the UI keypad (if visible)
+Defaults to “C”
+ </p>
+
+<p><code>button_D</code>
+xml string
+<code>&lt;visible&gt;true&lt;/visible&gt;</code>
+Designates whether button “D” will be visible on the UI keypad.
+<code>&lt;label&gt;This is Button D&lt;/label&gt;</code>
+The text that will appear on button “D” on the UI keypad (if visible)
+Defaults to “D”</p>
+
+<p><code>supports_virtual_keypad</code>
+Boolean Defaults to true.
+True if the panel supports raw key presses being passed by the software directly to the hardware; usually used for panel programming or setup. Navigator will provide the user a page that has the keypad on it.</p>
+<h1 id='security-partition-conditionals'>Security Partition Conditionals</h1>
+
+<p>The following Conditionals are supported with the Security System Controller Partition. System programming conditionals are handled by the proxy and return a true or false:</p>
+
+<p><code>CURRENT_ARM_STATUS</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>==</td>
+<td>equal</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>not equal</td>
+</tr>
+<tr>
+<td>ARM STATE</td>
+<td>One of the possible arm states listed in the <code>arm_states</code> configuration entry. These values are defined in the partition driver’s capabilities XML. See <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#security-partition-capabilities">arm_states</a> for more information.</td>
+</tr>
+</tbody></table>
+
+<p><code>IS_ALARM</code>
+Returns true if the current state is ALARM.</p>
+
+<p><code>IS_ARMED</code>
+Returns true if the current state is ARMED, ENTRY DELAY, EXIT DELAY or ALARM</p>
+
+<p><code>IS_AWAY</code>
+Returns true if the partition is armed for away. Note this has been deprecated and is present for backwards compatibility purposes.</p>
+
+<p><code>IS_DISARMED</code>
+Returns true if the partition is currently disarmed (states DISARMED READY or DISARMED NOT READY).</p>
+
+<p><code>IS_HOME</code>
+Returns true if the partition is armed for home (states HOME or Stay). Note this has been deprecated and is present for backwards compatibility purposes.</p>
+
+<p><code>IS_IN_ENTRY_DELAY</code>
+Returns true if the current state is ENTRY DELAY</p>
+
+<p><code>IS_IN_EXIT_DELAY</code>
+Returns true if the current state is EXIT DELAY</p>
+
+<p><code>PREVIOUS_ARM_STATUS</code>
+Same as <code>CURRENT_ARM_STATUS</code> but used to compares with the arm status before the last state change.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>==</td>
+<td>equal</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>not equal</td>
+</tr>
+<tr>
+<td>ARM STATE</td>
+<td>One of the possible arm states listed in the <code>arm_states</code> configuration entry. These values are defined in the partition driver’s capabilities XML. See <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#security-partition-capabilities">arm_states</a> for more information._</td>
+</tr>
+</tbody></table>
+<h1 id='security-partition-events'>Security Partition Events</h1>
+
+<p>The following Events are supported with the Security System Controller Partition. </p>
+
+<p><code>ALARM</code> 
+Fired when the partition enters an alarm state.</p>
+
+<p><code>ALARM_CLEAR</code>
+Fired when the partition leaves an alarm state.</p>
+
+<p><code>ARM_FAILED</code>
+Fired when an attempt to arm the partition failed</p>
+
+<p><code>ARMED</code> 
+Fired when the partition is armed. </p>
+
+<p><code>AWAY</code>
+Fired when the partition is armed for Away. Will be deprecated.</p>
+
+<p><code>DISARMED</code>
+Fired when the partition is disarmed.</p>
+
+<p><code>DISARM_FAILED</code>
+Fired when an attempt to disarm the partition failed</p>
+
+<p><code>EMERGENCY_TRIGGERED</code>
+Fired when an emergency is triggered that doesn&#39;t change the alarm state.</p>
+
+<p><code>HOME</code>
+Fired when the partition is armed for Home. Will be deprecated.</p>
+
+<p><code>PARTITION_STATE_CHANGE</code>
+Fired when the partition state changes</p>
+<h1 id='security-partition-notifications'>Security Partition Notifications</h1>
+
+<h2 id='security-partition-notifications-overview'>Overview</h2>
+
+<p>Sending Protocol Notifications requires the use of the <a href="https://snap-one.github.io/docs-driverworks-api/#proxy-interface-sendtoproxy">SendToProxy</a> API.</p>
+
+<p>The first parameter for C4:SendToProxy is a binding id.  The API doesn&#39;t not recognize Partion Ids. The assumption is made that the panel binding defined in driver.xml is on binding id 5001. Then partition 1 is on binding id 5002, partition 2 on 5003, etc.</p>
+
+<p>The second parameter is the text of the particular notification being sent. The Proxy knows the information being sent based off of this text. For example, when the parameter &quot;PARTITION_ENABLED&quot; is sent through SendtoProxy, the Camera proxy knows parameter type information that &quot;PARTITION_ENABLED&quot; should contain.</p>
+
+<p>The third parameter is a table of the parameters for the particular notification.  In this case, the PARTITION_ENABLED notification takes one parameter named &quot;ENABLED&quot;.  Its value is either &quot;true&quot; or &quot;false&quot;. Note that the third parameter could also be sent as a string rather than a table.  In this case the are no parameter names.  The whole string is just interpreted as data for the notification.  This usage is mostly deprecated, but some notifications (such as DISPLAY_TEXT) started out doing this and have never been changed so they don&#39;t break backward compatibility.</p>
+
+<p>The fourth parameter is just the word &quot;NOTIFY&quot;. This is just some extra information for BindingManager so it won&#39;t try to make assumptions about the type of message based on binding ids. It is recommended that it is included in C4:SendToProxy.</p>
+
+<p>To the right is an example of a fully formed Partition_Enabled Notifications being sent using the SendToProxy API.</p>
+
+<div class="highlight"><pre class="highlight lua tab-lua"><code>
+<span class="c1">-- Partition_Enabled Example</span>
+
+<span class="k">function</span> <span class="nf">SetPartitionEnabled</span><span class="p">(</span><span class="n">PartitionID</span><span class="p">,</span> <span class="n">Enabled</span><span class="p">)</span>
+    <span class="kd">local</span> <span class="n">TargetBindingID</span> <span class="o">=</span> <span class="n">PartitionID</span> <span class="o">+</span> <span class="mi">5001</span>
+    <span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"PARTITION_ENABLED"</span><span class="p">,</span> <span class="p">{</span> <span class="n">ENABLED</span> <span class="o">=</span> <span class="nb">tostring</span><span class="p">(</span><span class="n">Enabled</span><span class="p">)</span> <span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
+<span class="k">end</span>
+</code></pre></div>
+
+<h2 id='security-partition-notifications-arm_failed'>ARM_FAILED</h2>
+
+<p>An attempt to arm the partition failed.  The two most common reasons are because a user code is required to arm this partition or because one or more un-bypassed zones are open.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ACTION</td>
+<td>STR</td>
+<td style="text-align: left">Supported values include: “keypad”: Will cause Navigator to ask for a user code and then retry. “bypass”: Will cause Navigator to show a list of zones that are in fault and ask the user if they wish to continue. If continue chosen, the arm command will be resent.  However, it will try to bypass each faulted zone before it tries to arm again. “NA”: Failed for some other reason.  Navigator will take no further action on the arming.</td>
+</tr>
+<tr>
+<td>INTERFACE ID</td>
+<td>STR</td>
+<td style="text-align: left">Commands receiveD from Director will have an interface\_id string sent as one of the parameters.  This is a unique string that identifies where the command originated. When a response such as a failure is sent, it should only display on the UI that originated the command.  To support this, the INTERFACE ID string is sent back with the notification. Only the original UI will show the results of this notification.</td>
+</tr>
+</tbody></table>
+
+<h3 id='security-partition-notifications-arm_failed-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"ARM_FAILED"</span><span class="p">,</span> <span class="p">{</span> <span class="n">ACTION</span> <span class="o">=</span> <span class="s2">"bypass"</span> <span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='security-partition-notifications-clear_zone_list'>CLEAR_ZONE_LIST</h2>
+<p>Removes all the zones from a partition&#39;s list.  Usually precedes new messages that will build that list back up.</p>
+<h3 id='security-partition-notifications-clear_zone_list-parameters'>Parameters</h3>
+
+<p><code>None</code></p>
+
+<h3 id='security-partition-notifications-clear_zone_list-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"CLEAR_ZONE_LIST"</span><span class="p">,</span> <span class="p">{},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='security-partition-notifications-code_required'>CODE_REQUIRED</h2>
+<p>Sets a flag that Navigator will use when an arm command is attempted.  If the flag is true, Navigator will ask for a user code before it sends the arm command.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>CODE REQUIRED TO ARM:</td>
+<td>BOOL</td>
+<td>“true&quot; if the user code should be sent with the arm command.</td>
+</tr>
+</tbody></table>
+<h3 id='security-partition-notifications-code_required-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"CODE_REQUIRED"</span><span class="p">,</span> <span class="p">{</span> <span class="n">CODE_REQUIRED_TO_ARM</span> <span class="o">=</span> <span class="kc">true</span> <span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='security-partition-notifications-disarm_failed'>DISARM_FAILED</h2>
+<p>Notification sent when an attempt to disarm the panel failed. This is typically due to an invalid user code.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>INTERFACE ID</td>
+<td>STR</td>
+<td>Commands receiveD from Director will have an interface id string sent as one of the parameters.  This is a unique string that identifies where the command originated. When a response such as a failure is sent, it should only display on the UI that originated the command.  To support this, the INTERFACE ID string is sent back with the notification. Only the original UI will show the results of this notification.</td>
+</tr>
+</tbody></table>
+<h3 id='security-partition-notifications-disarm_failed-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"DISARM_FAILED"</span><span class="p">,</span> <span class="p">{</span> <span class="n">INTERFACE_ID</span> <span class="o">=</span> <span class="n">ID</span> <span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='security-partition-notifications-emergency_triggered'>EMERGENCY_TRIGGERED</h2>
+<p>An emergency was triggered, either from a sensor or by the user hitting one of the emergency buttons.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>TYPE</td>
+<td>STR</td>
+<td>Specifies the type of emergency just triggered.  It can be anything, but standard types that Navigator has icons for are: Fire, Medical, Police, and Panic.</td>
+</tr>
+</tbody></table>
+<h3 id='security-partition-notifications-emergency_triggered-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"EMERRGENCY_TRIGGERED"</span><span class="p">,</span> <span class="p">{</span> <span class="n">TYPE</span> <span class="o">=</span> <span class="s2">"Fire"</span> <span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='security-partition-notifications-has_zone'>HAS_ZONE</h2>
+<p>Tells the proxy that a particular zone is part of this partition.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ZONE ID:</td>
+<td>NUM</td>
+<td>The zone ID of the zone to be included in this partition&#39;s zone list.</td>
+</tr>
+</tbody></table>
+<h3 id='security-partition-notifications-has_zone-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"HAS_ZONE"</span><span class="p">,</span> <span class="p">{</span> <span class="n">ZONE_ID</span> <span class="o">=</span> <span class="mi">2</span> <span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='security-partition-notifications-partition_enabled'>PARTITION_ENABLED</h2>
+<p>It&#39;s possible to have partitions defined on a panel that aren&#39;t enabled. They still must have a proxy defined for them, but it is possible to specify whether they are currently in use or not.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ENABLED</td>
+<td>BOOL</td>
+<td>&quot;true&quot; if this partition is enabled.</td>
+</tr>
+</tbody></table>
+<h3 id='security-partition-notifications-partition_enabled-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"PARTITION_ENABLED"</span><span class="p">,</span> <span class="p">{</span> <span class="n">ENABLED</span> <span class="o">=</span> <span class="nb">tostring</span><span class="p">(</span><span class="n">Enabled</span><span class="p">)</span> <span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='security-partition-notifications-partition_state'>PARTITION_STATE</h2>
+<p>Specifies which state the partition is currently in.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>STATE</td>
+<td>STR</td>
+<td>Supported values include: <code>&quot;ARMED&quot; &quot;ALARM&quot; &quot;OFFLINE&quot; &quot;EXIT_DELAY&quot; &quot;ENTRY_DELAY&quot; &quot;DISARMED_READY&quot; &quot;DISARMED_NOT\\\_READY&quot; &quot;CONFIRMATION_REQUIRED&quot;</code></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>STR</td>
+<td>Further information on the state. For example, it could be &quot;Stay&quot; for a type of ARMED. It could be &quot;Burglary&quot; for a type of ALARM. Can be &quot;&quot; if not needed.</td>
+</tr>
+<tr>
+<td>DELAY TIME TOTAL:</td>
+<td>NUM</td>
+<td>For Entry or Exit delays. The total time of the delay.</td>
+</tr>
+<tr>
+<td>DELAY TIME REMAINING</td>
+<td>NUM</td>
+<td>For Entry or Exit delays, the time remaining in the delay.</td>
+</tr>
+<tr>
+<td>CODE REQUIRED TO CLEAR</td>
+<td>BOOL</td>
+<td>&quot;true&quot; if a user code is now required from Navigator to change from the current state.</td>
+</tr>
+</tbody></table>
+<h3 id='security-partition-notifications-partition_state-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"PARTITION_STATE"</span><span class="p">,</span> <span class="p">{</span> <span class="n">STATE</span> <span class="o">=</span> <span class="s2">"ALARM"</span><span class="p">,</span> <span class="n">TYPE</span> <span class="o">=</span> <span class="s2">"BURGLARY"</span><span class="p">,</span> <span class="n">DELAY_TIME_TOTAL</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">DELAY_TIME_REMAINING</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">CODE_REQUIRED_TO_CLEAR</span> <span class="o">=</span> <span class="kc">true</span> <span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='security-partition-notifications-partition_state_init'>PARTITION_STATE_INIT</h2>
+<p>Specifies which state the partition is currently in but will not cause any of the programming to be fired.  </p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>STATE</td>
+<td>STR</td>
+<td>Supported values include: &quot;<code>ARMED&quot; &quot;ALARM&quot; &quot;OFFLINE&quot; &quot;EXIT_DELAY&quot; &quot;ENTRY_DELAY&quot; &quot;DISARMED_READY&quot; &quot;DISARMED_NOT_READY&quot; &quot;CONFIRMATION_REQUIRED&quot;</code></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>STR</td>
+<td>Further information on the state. For example, it could be &quot;Stay&quot; for a type of ARMED. It could be &quot;Burglary&quot; for a type of ALARM. Can be &quot;&quot; if not needed.</td>
+</tr>
+<tr>
+<td>DELAY TIME TOTAL:</td>
+<td>NUM</td>
+<td>For Entry or Exit delays. The total time of the delay.</td>
+</tr>
+<tr>
+<td>DELAY TIME REMAINING</td>
+<td>NUM</td>
+<td>For Entry or Exit delays, the time remaining in the delay.</td>
+</tr>
+<tr>
+<td>CODE REQUIRED TO CLEAR</td>
+<td>BOOL</td>
+<td>&quot;true&quot; if a user code is now required from Navigator to change from the current state.</td>
+</tr>
+</tbody></table>
+<h3 id='security-partition-notifications-partition_state_init-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"PARTITION_STATE_INIT"</span><span class="p">,</span> <span class="p">{</span> <span class="n">STATE</span> <span class="o">=</span> <span class="s2">"ALARM"</span><span class="p">,</span> <span class="n">TYPE</span> <span class="o">=</span> <span class="s2">"BURGLARY"</span><span class="p">,</span> <span class="n">DELAY_TIME_TOTAL</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">DELAY_TIME_REMAINING</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">CODE_REQUIRED_TO_CLEAR</span> <span class="o">=</span> <span class="kc">true</span><span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='security-partition-notifications-request_additional_info'>REQUEST_ADDITIONAL_INFO</h2>
+<p>This notification allowS two-way communication with the keypad.  This command will cause Navigator to bring up the keypad screen with the prompt string.  After the user types in something on the keypad, it will be returned to the driver through the ADDITIONAL_INFO command.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>INFO STRING</td>
+<td>STR</td>
+<td>This is a string that will not be shown to the user, but will be returned with the ADDITIONAL\_INFO command.  It provides a way for information to be built up through multiple iterations of calls to <code>REQUEST_ADDITIONAL_INFO</code></td>
+</tr>
+<tr>
+<td>FUNCTION NAME</td>
+<td>STR</td>
+<td>This will not be shown to the user but will also be returned with the ADDITIONAL INFO command. It is the function name of the handler in the driver code that should be called when the new information arrives.</td>
+</tr>
+<tr>
+<td>MASK\_DATA:</td>
+<td>STR</td>
+<td>“true&quot; if the information being entered on the screen (such as a user code) should not be readable. If the flag is true, then each character will show up on the Navigator screen as a dot.</td>
+</tr>
+<tr>
+<td>INTERFACE ID</td>
+<td>BOOL</td>
+<td>Commands received from Director will have an interface\_id string sent as one of the parameters.  This is a unique string that identifies where the command originated. When a response such as a failure is sent, it should only display on the UI that originated the command.  To support this, the INTERFACE ID string is sent back with the notification. Only the original UI will show the results of this notification.</td>
+</tr>
+<tr>
+<td>INTERFACE ID</td>
+<td>STR</td>
+<td>Commands received from Director will have an interface\_id string sent as one of the parameters.  This is a unique string that identifies where the command originated. When a response such as a failure is sent, it should only display on the UI that originated the command.  To support this, the INTERFACE ID string is sent back with the notification. Only the original UI will show the results of this notification.</td>
+</tr>
+</tbody></table>
+<h3 id='security-partition-notifications-request_additional_info-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">"REQUEST_ADDITIONAL_INFO"</span><span class="p">,</span> <span class="p">{</span> <span class="n">PROMPT</span> <span class="o">=</span>
+<span class="n">promptstring</span><span class="p">,</span> <span class="n">INFO_STRING</span> <span class="o">=</span> <span class="n">infostring</span><span class="p">,</span> <span class="n">FUNCTION_NAME</span> <span class="o">=</span> <span class="n">functionstring</span><span class="p">,</span> <span class="n">MASK_DATA</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="n">INTERFACE_ID</span> <span class="o">=</span> <span class="n">interfaceid</span> <span class="p">},</span> <span class="s2">"NOTIFY"</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='security-partition-notifications-request_default_user_code_'>REQUEST_DEFAULT_USER_CODE_</h2>
+<p>The proxy code stores the default user code if it exists for the partition.  When the proxy is first bound to the protocol driver, it will send that code to the protocol driver.  However, we found that when a driver is updated, that call was not being made, so we added a mechanism for the protocol driver to initiate the communication to get that code.  This is new in 3.2</p>
+<h4 id='security-partition-notifications-request_default_user_code_-example-available-from-3-2-0'>Available from 3.2.0</h4><h3 id='security-partition-notifications-request_default_user_code_-parameters'>Parameters</h3>
+
+<p><code>None</code></p>
+
+<p><h3 id='security-partition-notifications-request_default_user_code_-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">&quot;REQUEST_DEFAULT_USER_CODE&quot;</span><span class="p">,</span> <span class="p">{},</span> <span class="s2">&quot;NOTIFY&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='security-partition-notifications-remove_zone'>REMOVE_ZONE</h2>
+<p>Tells the proxy that a particular zone is no longer a part of this partition.</p></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ZONE ID</td>
+<td>NUM</td>
+<td>The zone ID of the zone to be removed from the partition&#39;s zone list.</td>
+</tr>
+</tbody></table>
+
+<p><h3 id='security-partition-notifications-remove_zone-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">&quot;REMOVE_ZONE&quot;</span><span class="p">,</span> <span class="p">{</span> <span class="n">ZONE_ID</span> <span class="o">=</span> <span class="mi">1</span> <span class="p">},</span> <span class="s2">&quot;NOTIFY&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='security-partition-notifications-zone_state'>ZONE_STATE</h2>
+<p>Reports if a specific zone is open/closed and bypassed/un-bypassed.</p></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ZONE ID</td>
+<td>NUM</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>ZONE OPEN</td>
+<td>BOOL</td>
+<td>&quot;true&quot; if the zone is opened. &quot;false&quot; if it is closed.</td>
+</tr>
+<tr>
+<td>ZONE BYPASSED</td>
+<td>BOOL</td>
+<td>&quot;true&quot; if the zone is bypassed. &quot;false&quot; if it is not bypassed.</td>
+</tr>
+</tbody></table>
+
+<p><h3 id='security-partition-notifications-zone_state-example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="n">TargetBindingID</span><span class="p">,</span> <span class="s2">&quot;ZONE_STATE&quot;</span><span class="p">,</span> <span class="p">{</span> <span class="n">ZONE_ID</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">ZONE_OPEN</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="n">ZONE_BYPASSSED</span> <span class="o">=</span> <span class="kc">false</span> <span class="p">},</span> <span class="s2">&quot;NOTIFY&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<h1 id='security-partition-commands'>Security Partition Commands</h1>
+
+<h2 id='security-partition-commands-additional_info'>ADDITIONAL_INFO</h2>
+
+<p>This command will only be sent after having received a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#security-panel-notifications-request_additional_panel_info"><code>REQUEST_ADDITIONAL_INFO</code></a> notification from the protocol driver.  The protocol driver will send the notification to the proxy driver, which will send a <code>request_additional_info</code> DataToUI command to the UIs.  The UIs will then prompt the user for additional info. After the information is entered, the UI will generate this command to send back to the protocol driver. See the <code>REQUEST_ADDITIONAL_INFO</code> notification.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Info</td>
+<td>STR</td>
+<td>A copy of the <code>info_string</code> parameter that was passed with the <code>request_additional_info</code> request. The protocol driver will need this to know what actions to return to when it gets the new info.</td>
+</tr>
+<tr>
+<td>FunctionName</td>
+<td>STR</td>
+<td>A copy of the <code>function_name</code> parameter that was passed with the <code>request_additional_info</code> request. The protocol driver may need this to know what actions to return to when it gets the new info.</td>
+</tr>
+<tr>
+<td>NewInfo</td>
+<td>STR</td>
+<td>The new info provided by the UI in response to the <code>equest_additional_info</code> request.</td>
+</tr>
+<tr>
+<td>InterfaceID</td>
+<td>STR</td>
+<td>A unique (str) to identify which interface is sending this command.</td>
+</tr>
+</tbody></table>
+
+<h2 id='security-partition-commands-arm_cancel'>ARM_CANCEL</h2>
+
+<p>Cancel an uncompleted arm command.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>InterfaceID</td>
+<td>STR</td>
+<td>A unique string to identify which interface is sending this command.</td>
+</tr>
+</tbody></table>
+
+<h2 id='security-partition-commands-execute_emergency'>EXECUTE_EMERGENCY</h2>
+
+<p>Requests the partition to execute an emergency event of the type specified by the EmergencyType parameter. Valid values are: Fire, Medical, Police, and Panic.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td></td>
+<td>STR</td>
+<td>A unique string to identify which interface is sending this command.</td>
+</tr>
+<tr>
+<td>Interface ID</td>
+<td>STR</td>
+<td>I Unique string ID indicating from where the command originated</td>
+</tr>
+</tbody></table>
+
+<h2 id='security-partition-commands-execute_function'>EXECUTE_FUNCTION</h2>
+
+<p>Request the partition to execute a function event of the type listed in the functions capability. The function parameter would be one of the function strings listed in the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#security-partition-capabilities">&lt;functions&gt;</a> capability</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Function</td>
+<td>STR</td>
+<td>Function string</td>
+</tr>
+<tr>
+<td>InterfaceID</td>
+<td>STR</td>
+<td>A unique string to identify which interface is sending this command.</td>
+</tr>
+</tbody></table>
+
+<h2 id='security-partition-commands-key_press'>KEY_PRESS</h2>
+
+<p>Specifies that a key (button) was pressed on the UI interface. But different from<code> BUTTON_PRESS</code>, the actual key name is passed rather than its ID.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Key Name</td>
+<td>STR</td>
+<td>The single key that we should emulate a press for.</td>
+</tr>
+<tr>
+<td>InterfaceID</td>
+<td>STR</td>
+<td>A unique string to identify which interface is sending this command.</td>
+</tr>
+</tbody></table>
+
+<h2 id='security-partition-commands-set_default_user_code'>SET_DEFAULT_USER_CODE</h2>
+
+<p>The default user code that this driver should use when it receives arm and disarm commands that originated from programming.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>str</td>
+<td>Code</td>
+</tr>
+</tbody></table>
+
+<h2 id='security-partition-commands-partition_arm'>PARTITION_ARM</h2>
+
+<p>Specifies the user code to use with the arm command (if needed).</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ArmType</td>
+<td>STR</td>
+<td>Request the partition to arm.</td>
+</tr>
+<tr>
+<td>UserCode</td>
+<td>STR</td>
+<td>Optional. Specifies the user code to use with the arm command (if needed).</td>
+</tr>
+<tr>
+<td>Bypass</td>
+<td>BOOL</td>
+<td>Optional. Specify whether currently open zones should be bypassed.</td>
+</tr>
+<tr>
+<td>InterfaceID</td>
+<td>STR</td>
+<td>A unique string to identify which interface is sending this command.</td>
+</tr>
+</tbody></table>
+
+<h2 id='security-partition-commands-partition_disarm'>PARTITION_DISARM</h2>
+
+<p>Specifies the user code to use with the DISARM command (if needed).</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>User Code:</td>
+<td>STR</td>
+<td>The user code needed for disarming.</td>
+</tr>
+<tr>
+<td>InterfaceID</td>
+<td>STR</td>
+<td>A unique string to identify which interface is sending this command.</td>
+</tr>
+</tbody></table>
+<h1 id='security-partition-states'>Security Partition States</h1>
+
+<h2 id='security-partition-states-security-system-controller-partition-states'>SECURITY SYSTEM CONTROLLER PARTITION STATES</h2>
+
+<p>The following States are supported by the Security System Controller Partition. These states were added to the Proxy in operating system release 2.9.0.</p>
+
+<h2 id='security-partition-states-alarm'>ALARM</h2>
+
+<p>The partition is in an alarm state.  A separate variable will indicate which type of alarm (Burglary, Fire, CO, etc.).</p>
+
+<h2 id='security-partition-states-armed'>ARMED</h2>
+
+<p>The partition is armed. A separate variable would keep track of what type of armed state.  HOME and AWAY would be the most common types, but the protocol driver could specify other types if desired.</p>
+
+<h2 id='security-partition-states-confirmation-required'>CONFIRMATION REQUIRED</h2>
+
+<p>Some panels require an extra confirmation from the user after an alarm has been cleared before they will go back into <code>DISARMED_READY</code> state.  When in this state, the panel is waiting for a <code>SEND_CONFIRMATION</code> command from one of the UIs.</p>
+
+<h2 id='security-partition-states-disarmed-ready'>DISARMED READY</h2>
+
+<p>The partition is disarmed, but could be armed if desired.</p>
+
+<h2 id='security-partition-states-disarmed-not-ready'>DISARMED NOT READY</h2>
+
+<p>The partition is disarmed, but not ready to be armed; usually because one of its zones is currently open.</p>
+
+<h2 id='security-partition-states-exit-delay'>EXIT DELAY</h2>
+
+<p>The user has given the arm command, but the partition is in the delay time which allows the user to exit the area before the alarm is tripped.</p>
+
+<h2 id='security-partition-states-entry-delay'>ENTRY DELAY</h2>
+
+<p>The user has opened a zone while the partition is armed. He has a certain amount of time to disarm the system before the alarm engages.</p>
+
+<h2 id='security-partition-states-offline'>OFFLINE</h2>
+
+<p>The partition is in an OFFLINE state.</p>
+<h1 id='security-sensor-types'>Security Sensor Types</h1>
+
+<p>The following sensor types and their respective ID values are listed below:</p>
+
+<ul>
+<li>UNKNOWN = 0</li>
+<li>CONTACT_SENSOR = 1</li>
+<li>EXTERIOR_DOOR = 2</li>
+<li>EXTERIOR_WINDOW = 3</li>
+<li>INTERIOR_DOOR = 4</li>
+<li>MOTION_SENSOR = 5</li>
+<li>FIRE = 6</li>
+<li>GAS = 7</li>
+<li>CARBON_MONOXIDE = 8</li>
+<li>HEAT = 9</li>
+<li>WATER = 10</li>
+<li>SMOKE = 11</li>
+<li>PRESSURE = 12</li>
+<li>GLASS_BREAK = 13</li>
+<li>GATE = 14</li>
+<li>GARAGE_DOOR = 15</li>
+</ul>
+
+<p>There are no restrictions imposed regarding sensor types when zone information is sent to the security proxy and functionality is not impacted based on the sensor type defined. The sensor type value only dictates which icons are displayed on Navigators and within ComposerPro.</p>
+<h1 id='security-variables'>Security Variables</h1>
+
+<h2 id='security-variables-security-system-controller-partition-variables'>SECURITY SYSTEM CONTROLLER PARTITION VARIABLES</h2>
+
+<p>The Security System Controller Partition supports the following Variables:</p>
+
+<p><code>HOME_STATE</code> Boolean. True when armed home. Will be deprecated.</p>
+
+<p><code>AWAY_STATE</code> Boolean. True when armed away. Will be deprecated.</p>
+
+<p><code>DISARMED_STATE</code> Boolean. True when disarmed. Will be deprecated.</p>
+
+<p><code>ALARM_STATE</code> Boolean. True when in an alarm state.</p>
+
+<p><code>DISPLAY_TEXT</code> String. Current text in the display window.</p>
+
+<p><code>TROUBLE_TEXT</code> String. Current text in the trouble window. When trouble text is blank, the UI will hide the trouble text window and give the space to the display text window.</p>
+
+<p><code>IS_ACTIVE</code> Boolean. True if this partition is active and can be used.</p>
+
+<p><code>PARTITION_STATE</code> String. Text representation of the current state.</p>
+
+<p><code>DELAY_TIME_TOTAL</code> Integer. The total length of the current Entry or Exit delay. If not in a delay, this will be 0.</p>
+
+<p><code>DELAY_TIME_REMAINING</code> Integer. The amount of time remaining in the current Entry or Exit delay. If not in a delay this will be 0.</p>
+
+<p><code>OPEN_ZONE_COUNT</code> Integer. The number of zones in this partition which are currently open.  Usually this will only matter when the armed state is <code>DISARMED_NOT_READY</code>.</p>
+
+<p><code>ALARM_TYPE</code> String. If the system is currently in the ALARM state, this will be a string representation of the type of alarm (Burglary, Fire, Medical, Panic, Carbon Monoxide, etc.).</p>
+
+<p><code>ARMED_TYPE</code> String. If we the system is currently in the ARMED state, this will be a string representation of type of arming (HOME, AWAY, etc.).</p>
+
+<p><code>LAST_EMERGENCY</code> String. When an emergency is triggered, this variable will store which type of emergency it was.  e.g. “Police” or “Panic.</p>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="lua">lua</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

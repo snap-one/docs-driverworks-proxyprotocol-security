@@ -1,2 +1,3 @@
-# docs-driverworks-proxyprotocol-security
- Security System Proxy SDK documentation
+# Driverworks Proxy/Protocol Guide - security
+
+Security System Proxy SDK documentation

@@ -1,6 +1,11 @@
 
 This documentation includes content that details the functions that make up the Security System Control Proxy which is supported in the DriverWorks Software Development Kit.
 
+Additional driver development documentation supporting security controller driver development can be found in the DriverWorks Fundamentals Guide. This includes:
+
+[Security Sensor Type Information][1]
+
+
 ## Proxies (Commands)
 
 A proxy driver is an interface to the Control4 system for a set of devices that share common functionality. For instance, most DVD disc changers have common controls such as SET ZONE INFO, GET PANEL SETUP and ARM INFO.  The Security System Control proxy allows for a common user interface to control all security systems.  The Control4 system (Director) sends information to and receives information from the proxy drivers.  The proxy drivers send information to and receives information from the protocol drivers.
@@ -11,3 +16,5 @@ Your driver can facilitate communications with multiple types of proxies for a s
 ## Protocol (Notifications)
 
 Two similar devices may have the same functionality but utilize a very different command set.  A protocol driver provides the device-specific information needed to communicate with the Control4 system.  In the case of DriverWorks, the DriverWorks driver is the protocol driver.  When combined with the device-specific.c4Z file it provides the custom code necessary to implement the 2-way device driver.  In the case of DriverWorks, the DriverWorks driver is the protocol driver. When combined with the device-specific.c4Z file it provides the custom code necessary to implement the 2-way device driver.
+
+[1]:	https://musical-potato-93lyp9g.pages.github.io/#proxy-specific-information-security-sensor-types

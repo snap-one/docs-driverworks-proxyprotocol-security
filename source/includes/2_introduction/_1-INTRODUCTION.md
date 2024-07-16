@@ -17,4 +17,4 @@ Your driver can facilitate communications with multiple types of proxies for a s
 
 Two similar devices may have the same functionality but utilize a very different command set.  A protocol driver provides the device-specific information needed to communicate with the Control4 system.  In the case of DriverWorks, the DriverWorks driver is the protocol driver.  When combined with the device-specific.c4Z file it provides the custom code necessary to implement the 2-way device driver.  In the case of DriverWorks, the DriverWorks driver is the protocol driver. When combined with the device-specific.c4Z file it provides the custom code necessary to implement the 2-way device driver.
 
-[1]:	https://musical-potato-93lyp9g.pages.github.io/#proxy-specific-information-security-sensor-types
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-security/#proxy-specific-information-security-sensor-types
